@@ -5,490 +5,456 @@
 // Copyright: Gie Katon (2020-2021) (https://giekaton.com)
 
 
-function multiavatar (string, sansEnv, ver) {
+function multiavatar(string, sansEnv, ver) {
   string += '';
 
   var themes = {
 
-    // Robo
+    // 00_final
     "00": {
       "A": {
-        "env": ["#ff2f2b"],
-        "clo": ["#fff", "#000"],
-        "head": ["#fff"],
-        "mouth": ["#fff", "#000", "#000"],
-        "eyes": ["#000", "none", "#00FFFF"],
-        "top": ["#fff", "#fff"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none"]
       },
       "B": {
-        "env": ["#ff1ec1"],
-        "clo": ["#000", "#fff" ],
-        "head": ["#ffc1c1"],
-        "mouth": ["#fff", "#000", "#000"],
-        "eyes": ["#FF2D00", "#fff", "none"],
-        "top": ["#a21d00", "#fff"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none"]
       },
       "C": {
-        "env": ["#0079b1"],
-        "clo": ["#0e00b1", "#d1fffe"],
-        "head": ["#f5aa77"],
-        "mouth": ["#fff", "#000", "#000"],
-        "eyes": ["#0c00de", "#fff", "none"],
-        "top": ["#acfffd", "#acfffd"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none"]
       },
     },
 
-    // Girl
+    // 01_final
     "01": {
       "A": {
-        "env": ["#a50000"],
-        "clo": ["#f06", "#8e0039"],
-        "head": ["#85492C"],
-        "mouth": ["#000"],
-        "eyes": ["#000", "#ff9809"],
-        "top": ["#ff9809", "#ff9809", "none", "none"]
+        "env": ["none"],
+        "clo": ["#685220", "black"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["black", "black", "black", "white", "black", "white"],
+        "top": ["#4a2d00"]
       },
       "B": {
-        "env": ["#40E83B"],
-        "clo": ["#00650b", "#62ce5a"],
-        "head": ["#f7c1a6"],
-        "mouth": ["#6e1c1c"],
-        "eyes": ["#000", "#ff833b"],
-        "top": ["#67FFCC", "none", "none", "#ecff3b"]
+        "env": ["none"],
+        "clo": ["#685220", "black"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["black", "black", "black", "white", "black", "white"],
+        "top": ["#4a2d00"]
       },
       "C": {
-        "env": ["#ff2c2c"],
-        "clo": ["#fff", "#000"],
-        "head": ["#ffce8b"],
-        "mouth": ["#000"],
-        "eyes": ["#000", "#0072ff"],
-        "top": ["#ff9809", "none", "#ffc809", "none"]
+        "env": ["none"],
+        "clo": ["#685220", "black"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["black", "black", "black", "white", "black", "white"],
+        "top": ["#4a2d00"]
       }
     },
 
-    // Blonde
+    // 02_final
     "02": {
       "A": {
-        "env": ["#ff7520"],
-        "clo": ["#d12823"],
-        "head": ["#fee3c5"],
-        "mouth": ["#d12823"],
-        "eyes": ["#000", "none"],
-        "top": ["#000", "none", "none",  "#FFCC00", "red"]
+        "env": ["none"],
+        "clo": ["none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["red", "white", "white", "white", "white", "white", "white", "white", "white"],
+        "top": ["none", "none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#ff9700"],
-        "clo": ["#000"],
-        "head": ["#d2ad6d"],
-        "mouth": ["#000"],
-        "eyes": ["#000", "#00ffdc"],
-        "top": ["#fdff00", "#fdff00", "none", "none", "none"]
+        "env": ["none"],
+        "clo": ["none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["green", "white", "white", "white", "white", "white", "white", "white", "white"],
+        "top": ["none", "none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#26a7ff"],
-        "clo": ["#d85cd7"],
-        "head": ["#542e02"],
-        "mouth": ["#f70014"],
-        "eyes": ["#000", "magenta"],
-        // "eyes": ["#000", "#ff0000"],
-        "top": ["#FFCC00", "#FFCC00", "#FFCC00", "#ff0000", "yellow"]
+        "env": ["none"],
+        "clo": ["none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["blue", "white", "white", "white", "white", "white", "white", "white", "white"],
+        "top": ["none", "none", "none", "none", "none"]
       }
     },
 
-    // Evilnormie
+    // 03_final
     "03": {
       "A": {
-        "env": ["#6FC30E"],
-        "clo": ["#b4e1fa", "#5b5d6e", "#515262", "#a0d2f0", "#a0d2f0"],
-        // "clo": ["#1f9ee4", "#262c5f", "#262c5f", "#a0d2f0", "#a0d2f0"],
-        "head": ["#fae3b9"],
-        "mouth": ["#fff", "#000"],
-        "eyes": ["#000"],
-        "top": ["#8eff45", "#8eff45", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#00a58c"],
-        "clo": ["#000", "none", "none", "none", "none"],
-        "head": ["#FAD2B9"],
-        "mouth": ["#fff", "#000"],
-        "eyes": ["#000"],
-        "top": ["#FFC600", "none", "#FFC600", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#ff501f"],
-        "clo": ["#000", "#ff0000", "#ff0000", "#7d7d7d", "#7d7d7d"],
-        "head": ["#fff3dc"],
-        "mouth": ["#d2001b", "none"],
-        "eyes": ["#000"],
-        "top": ["#D2001B", "none", "none", "#D2001B"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       }
     },
 
-    // Country
+    // 04_final
     "04": {
       "A": {
-        "env": ["#fc0"],
-        "clo": ["#901e0e", "#ffbe1e", "#ffbe1e", "#c55f54"],
-        "head": ["#f8d9ad"],
-        "mouth": ["#000", "none", "#000", "none"],
-        "eyes": ["#000"],
-        // "top": ["#48362D", "#AF892E", "#674C43", "#282828"]
-        "top": ["#583D00", "#AF892E", "#462D00", "#a0a0a0"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#386465"],
-        "clo": ["#fff", "#333", "#333", "#333"],
-        "head": ["#FFD79D"],
-        "mouth": ["#000", "#000", "#000", "#000"],
-        "eyes": ["#000"],
-        "top": ["#27363C", "#5DCAD4", "#314652", "#333"]
-        // "top": ["#95E8CF", "#12353D", "#09A4AF", "#333"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#DFFF00"],
-        "clo": ["#304267", "#aab0b1", "#aab0b1", "#aab0b1"],
-        "head": ["#e6b876"],
-        "mouth": ["#50230a", "#50230a", "#50230a", "#50230a"],
-        "eyes": ["#000"],
-        "top": ["#333", "#afafaf", "#222", "#6d3a1d"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       }
     },
 
-    // Johnyold
+    // 05_final
     "05": {
       "A": {
-        // "env": ["#c7b810"],
-        "env": ["#a09300"],
-        "clo": ["#c7d4e2", "#435363", "#435363", "#141720", "#141720", "#e7ecf2", "#e7ecf2"],
-        "head": ["#f5d4a6"],
-        "mouth": ["#000", "#cf9f76"],
-        "eyes": ["#000", "#000", "#000", "#000", "#000", "#000", "#fff", "#fff", "#fff", "#fff", "#000", "#000"],
-        "top": ["none", "#fdff00"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"],
+        "top": ["none", "none"]
       },
       "B": {
-        "env": ["#b3003e"],
-        "clo": ["#000", "#435363", "#435363", "#000", "none", "#e7ecf2", "#e7ecf2"],
-        "head": ["#f5d4a6"],
-        "mouth": ["#000", "#af9f94"],
-        "eyes": ["#9ff3ff;opacity:0.96", "#000", "#9ff3ff;opacity:0.96", "#000", "#2f508a", "#000", "#000", "#000", "none", "none", "none", "none"],
-        "top": ["#ff9a00", "#ff9a00"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"],
+        "top": ["none", "none"]
       },
       "C": {
-        "env": ["#884f00"],
-        "clo": ["#ff0000", "#fff", "#fff", "#141720", "#141720", "#e7ecf2", "#e7ecf2"],
-        "head": ["#c57b14"],
-        "mouth": ["#000", "#cf9f76"],
-        "eyes": ["none", "#000", "none", "#000", "#5a0000", "#000", "#000", "#000", "none", "none", "none", "none"],
-        "top": ["#efefef", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"],
+        "top": ["none", "none"]
       }
     },
 
-    // Asian
+    // 06_final
     "06": {
       "A": {
-        "env": ["#8acf00"],
-        "clo": ["#ee2829", "#ff0"],
-        "head": ["#ffce73"],
-        "mouth": ["#fff", "#000"],
-        "eyes": ["#000"],
-        "top": ["#000","#000","none", "#000", "#ff4e4e", "#000"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#00d2a3"],
-        // "env": ["#007359"],
-        "clo": ["#0D0046", "#ffce73"],
-        "head": ["#ffce73"],
-        "mouth": ["#000", "none"],
-        "eyes": ["#000"],
-        "top": ["#000","#000","#000", "none", "#ffb358",  "#000", "none", "none"]
-        // "top": ["#00898c", "#fff"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none", "none", "none", "none", "none"]
       },
       "C": {
-        // "env": ["#C13D5C"],
-        "env": ["#ff184e"],
-        "clo": ["#000", "none"],
-        "head": ["#ffce73"],
-        "mouth": ["#ff0000", "none"],
-        "eyes": ["#000"],
-        "top": ["none","none","none", "none", "none",  "#ffc107", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none", "none", "none", "none", "none"]
       }
     },
 
-    // Punk
+    // 07_final
     "07": {
       "A": {
-        "env": ["#00deae"],
-        // "clo": ["#cc8562", "#f2efea", "#cc8562"],
-        "clo": ["#ff0000"],
-        "head": ["#ffce94"],
-        "mouth": ["#f73b6c", "#000"],
-        "eyes": ["#e91e63", "#000", "#e91e63", "#000", "#000", "#000"],
-        "top": ["#dd104f", "#dd104f", "#f73b6c", "#dd104f"]
+        "env": ["none"],
+        "clo": ["none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none", "none", "none", "none"],
+        "top": ["none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#181284"],
-        "clo": ["#491f49", "#ff9809", "#491f49"],
-        "head": ["#f6ba97"],
-        "mouth": ["#ff9809", "#000"],
-        "eyes": ["#c4ffe4", "#000", "#c4ffe4", "#000", "#000", "#000"],
-        "top": [ "none", "none", "#d6f740", "#516303"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none", "none", "none", "none"],
+        "top": ["none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#bcf700"],
-        "clo": ["#ff14e4", "#000", "#14fffd"],
-        "head": ["#7b401e"],
-        "mouth": ["#666", "#000"],
-        "eyes": ["#00b5b4", "#000", "#00b5b4", "#000", "#000", "#000"],
-        "top": ["#14fffd", "#14fffd", "#14fffd", "#0d3a62"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none", "none", "none", "none"],
+        "top": ["none", "none", "none", "none"]
       }
     },
 
-    // Afrohair
+    // 08_final
     "08": {
       "A": {
-        "env": ["#0df"],
-        "clo": ["#571e57", "#ff0"],
-        "head": ["#f2c280"],
-        "eyes": ["#795548", "#000"],
-        "mouth": ["#ff0000"],
-        "top": ["#de3b00", "none"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "eyes": ["none", "none"],
+        "mouth": ["white"],
+        "top": ["none", "none"]
       },
       "B": {
-        "env": ["#B400C2"],
-        "clo": ["#0D204A", "#00ffdf"],
-        "head": ["#ca8628"],
-        "eyes": ["#cbbdaf", "#000"],
-        "mouth": ["#1a1a1a"],
-        "top": ["#000", "#000"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "eyes": ["none", "none"],
+        "mouth": ["white"],
+        "top": ["none", "none"]
       },
       "C": {
-        "env": ["#ffe926"],
-        "clo": ["#00d6af", "#000"],
-        "head": ["#8c5100"],
-        "eyes": ["none", "#000"],
-        "mouth": ["#7d0000"],
-        "top": ["#f7f7f7", "none"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "eyes": ["none", "none"],
+        "mouth": ["white"],
+        "top": ["none", "none"]
       }
     },
 
-    // Normie female
+    // 09_final
     "09": {
       "A": {
-        "env": ["#4aff0c"],
-        "clo": ["#101010", "#fff", "#fff"],
-        "head": ["#dbbc7f"],
-        "mouth": ["#000"],
-        "eyes": [ "#000", "none", "none"],
-        "top": ["#531148", "#531148", "#531148", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#FFC107"],
-        "clo": ["#033c58", "#fff", "#fff"],
-        "head": ["#dbc97f"],
-        "mouth": ["#000"],
-        "eyes": ["none", "#fff", "#000"],
-        "top": ["#FFEB3B", "#FFEB3B", "none", "#FFEB3B"]
-        // "top": ["#085258", "#085258", "none", "#085258"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#FF9800"],
-        "clo": ["#b40000", "#fff", "#fff"],
-        "head": ["#E2AF6B"],
-        "mouth": ["#000"],
-        "eyes": ["none", "#fff", "#000"],
-        "top": ["#ec0000", "#ec0000", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none", "none"]
       }
     },
 
-    // Older
+    // 10_final
     "10": {
       "A": {
-        "env": ["#104c8c"],
-        "clo": ["#354B65", "#3D8EBB", "#89D0DA", "#00FFFD" ],
-        "head": ["#cc9a5c"],
-        "mouth": ["#222", "#fff"],
-        "eyes": ["#000", "#000"],
-        "top": ["#fff", "#fff", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none"],
+        "top": ["none", "none", "none"]
       },
       "B": {
-        "env": ["#0DC15C"],
-        "clo": ["#212121", "#fff", "#212121", "#fff" ],
-        "head": ["#dca45f"],
-        "mouth": ["#111", "#633b1d"],
-        "eyes": ["#000", "#000"],
-        "top": ["none", "#792B74", "#792B74"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none"],
+        "top": ["none", "none", "none"]
       },
       "C": {
-        "env": ["#ffe500"],
-        "clo": ["#1e5e80", "#fff", "#1e5e80", "#fff"],
-        "head": ["#e8bc86"],
-        "mouth": ["#111", "none"],
-        "eyes": ["#000", "#000"],
-        // "eyes": ["#636363", "#ADADAD", "#301e19"],
-        "top": ["none", "none", "#633b1d"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none"],
+        "top": ["none", "none", "none"]
       }
     },
 
-    // Firehair
+    // 11_final
     "11": {
       "A": {
-        "env": ["#4a3f73"],
-        "clo": ["#e6e9ee", "#f1543f", "#ff7058", "#fff", "#fff"],
-        "head": ["#b27e5b"],
-        "mouth": ["#191919", "#191919"],
-        "eyes": ["#000", "#000", "#57FFFD"],
-        "top": ["#ffc", "#ffc", "#ffc"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none"]
       },
       "B": {
-        "env": ["#00a08d"],
-        "clo": ["#FFBA32", "#484848", "#4e4e4e", "#fff", "#fff"],
-        "head": ["#ab5f2c"],
-        "mouth": ["#191919", "#191919"],
-        //  "#61b7ff",
-        "eyes": ["#000", "#ff23fa;opacity:0.39", "#000"],
-        "top": ["#ff90f4", "#ff90f4", "#ff90f4"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none"]
       },
       "C": {
-        "env": ["#22535d"],
-        "clo": ["#000", "#ff2500", "#ff2500", "#fff", "#fff"],
-        "head": ["#a76c44"],
-        "mouth": ["#191919", "#191919"],
-        "eyes": ["#000", "none", "#000"],
-        "top": ["none", "#00efff", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none"]
       }
     },
 
-    // Blond
+    // 12_final
     "12": {
       "A": {
-        "env": ["#2668DC"],
-        "clo": ["#2385c6", "#b8d0e0", "#b8d0e0"],
-        "head": ["#ad8a60"],
-        "mouth": ["#000", "#4d4d4d"],
-        "eyes": ["#7fb5a2", "#d1eddf", "#301e19"],
-        // "top": ["#ff6"]
-        // "top": ["#ff0"]
-        "top": ["#fff510", "#fff510"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none"]
       },
       "B": {
-        "env": ["#643869"],
-        "clo": ["#D67D1B", "#b8d0e0", "#b8d0e0"],
-        "head": ["#CC985A", "none0000"],
-        "mouth": ["#000", "#ececec"],
-        "eyes": ["#1f2644", "#9b97ce", "#301e19"],
-        // "top": ["#c700c7"]
-        // "top": ["#c54560"]
-        // "top": ["#ff393e", "none"]
-        "top": ["#00eaff", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none"]
       },
       "C": {
-        "env": ["#F599FF"],
-        "clo": ["#2823C6", "#b8d0e0", "#b8d0e0"],
-        "head": ["#C7873A"],
-        "mouth": ["#000", "#4d4d4d"],
-        "eyes": ["#581b1b", "#FF8B8B", "#000"],
-        // "top": ["#5F1F1F"]
-        // "top": ["#fff00"]
-        "top": ["none", "#9c0092"]
+        "env": ["none"],
+        "clo": ["none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none"]
       }
     },
 
-    // Ateam
+    // 13_final
     "13": {
       "A": {
-        "env": ["#d10084"],
-        "clo": ["#efedee", "#00a1e0", "#00a1e0", "#efedee", "#ffce1c"],
-        "head": ["#b35f49"],
-        "mouth": ["#3a484a", "#000"],
-        "eyes": ["#000"],
-        "top": ["#000", "none", "#000", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#E6C117"],
-        "clo": ["#efedee", "#ec0033", "#ec0033", "#efedee", "#f2ff05"],
-        "head": ["#ffc016"],
-        "mouth": ["#4a3737", "#000"],
-        "eyes": ["#000"],
-        "top": ["#ffe900", "#ffe900", "none", "#ffe900"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#1d8c00"],
-        // "env": ["#C6FE3C"],
-        // "env": ["#cace10"],
-        "clo": ["#e000cb", "#fff", "#fff", "#e000cb", "#ffce1c"],
-        "head": ["#b96438"],
-        "mouth": ["#000", "#000"],
-        "eyes": ["#000"],
-        // "top": ["#eff4b0"]
-        // "top": ["#e0e0e0"]
-        // "top": ["#d7ffff"] // ice
-        // "top": ["#f0ffff"] // ice
-        "top": ["#53ffff", "#53ffff", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none"]
       }
     },
 
-    // Rasta
+    // 14_final
     "14": {
       "A": {
-        "env": ["#fc0065"],
-        "clo": ["#708913", "#fdea14", "#708913", "#fdea14", "#708913"],
-        "head": ["#DEA561"],
-        "mouth": ["#444", "#000"],
-        "eyes": ["#000"],
-        "top": ["#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f", "#32393f" ]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#81f72e"],
-        "clo": ["#ff0000", "#ffc107", "#ff0000", "#ffc107", "#ff0000"],
-        "head": ["#ef9831"],
-        // "mouth": ["#a2a2a2", "#000"],
-        "mouth": ["#6b0000", "#000"],
-        "eyes": ["#000"],
-        "top": ["#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "#FFFAAD", "none", "none", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#00D872"],
-        "clo": ["#590D00", "#FD1336", "#590D00", "#FD1336", "#590D00"],
-        "head": ["#c36c00"],
-        "mouth": ["#56442b", "#000"],
-        "eyes": ["#000"],
-        "top": ["#004E4C", "#004E4C", "#004E4C", "#004E4C", "#004E4C", "#004E4C", "#004E4C", "#004E4C", "#004E4C", "none", "none", "none", "none", "none", "none", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none", "none", "none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none"],
+        "top": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"]
       }
     },
-    
-    // Meta
+
+    // 15_final
     "15": {
       "A": {
-        // "env": ["#ccc"],
-        "env": ["#111"],
-        "clo": ["#000", "#00FFFF"],
-        "head": ["#755227"],
-        "mouth": ["#fff", "#000"],
-        "eyes": ["black", "#008;opacity:0.67", "aqua"],
-        // "top": ["#004a57"] // dark blue
-        "top": ["#fff", "#fff", "#fff", "#fff", "#fff"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none", "none", "none"]
       },
       "B": {
-        "env": ["#00D0D4"],
-        // "env": ["#30afab"],
-        // "env": ["#E8E8E8"],
-        "clo": ["#000", "#fff"],
-        "head": ["#755227"],
-        "mouth": ["#fff", "#000"],
-        // "eyes": ["black", "black", "#ff0303"],
-        "eyes": ["black", "#1df7ff;opacity:0.64", "#fcff2c"],
-        // "top": ["#fffbaf"] // bright yellow
-        "top": ["#fff539", "none", "#fff539", "none", "#fff539"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none", "none", "none"]
       },
       "C": {
-        "env": ["#DC75FF"],
-        "clo": ["#000", "#FFBDEC"],
-        "head": ["#997549"],
-        "mouth": ["#fff", "#000"],
-        "eyes": ["black", "black", "aqua"],
-        // "top": ["#474747"]
-        // "top": ["#ff64e6"]
-        "top": ["#00fffd", "none", "none", "none", "none"]
+        "env": ["none"],
+        "clo": ["none", "none"],
+        "head": ["#ffeebe"],
+        "mouth": ["white"],
+        "eyes": ["none", "none", "none"],
+        "top": ["none", "none", "none", "none", "none"]
       }
     }
   }
@@ -503,169 +469,169 @@ function multiavatar (string, sansEnv, ver) {
   var head = '<path d="m115.5 51.75a63.75 63.75 0 0 0-10.5 126.63v14.09a115.5 115.5 0 0 0-53.729 19.027 115.5 115.5 0 0 0 128.46 0 115.5 115.5 0 0 0-53.729-19.029v-14.084a63.75 63.75 0 0 0 53.25-62.881 63.75 63.75 0 0 0-63.65-63.75 63.75 63.75 0 0 0-0.09961 0z" style="fill:#000;"/>';
   var str = 'stroke-linecap:round;stroke-linejoin:round;stroke-width:';
 
-  
+
   // The below code is automatically injected by running /svg/_build.php script
   // PHP_inject_start
 
 
   // Robo
-	sP['00'] = [];
-	sP['00']['env'] = env;
-	sP['00']['clo'] = '<path d="m141.74 195a114.93 114.93 0 0 1 37.912 16.45l0.07 0.05c-1.17 0.79-2.3601 1.55-3.5601 2.29a115.55 115.55 0 0 1-120.95 0.21q-2.0001-1.23-4.0002-2.54a114.79 114.79 0 0 1 38.002-16.5 116.21 116.21 0 0 1 15.791-2.49v-14.57c1.32 0.22 2.6501 0.39 4.0002 0.51 2.0001 0.19 4.0002 0.28 6.1202 0.29a64.333 64.33 0 0 0 8.8804-0.62c0.67003-0.09 1.3401-0.2 2.0001-0.31v14.69a118 118 0 0 1 15.741 2.54z" style="fill:#fff;"/><path d="m79.292 212a3.4601 3.46 0 0 0 3.8902 5.07 3.3801 3.38 0 0 0 2.1001-1.61 3.4701 3.47 0 0 0-1.2801-4.72 3.4201 3.42 0 0 0-2.6201-0.34 3.5101 3.51 0 0 0-2.0901 1.6zm60.122 0.46a3.4901 3.49 0 0 0 1.21 4.7h0.06a3.4601 3.46 0 0 0 4.7202-1.27l0.07-0.13a3.4601 3.46 0 0 0-1.34-4.6 3.4601 3.46 0 0 0-2.5801-0.32 3.5301 3.53 0 0 0-2.1001 1.61zm9.8004 5.7 5.8602 5.87c-1.39 0.5-2.7901 1-4.2102 1.44l-4.4802-4.47a7.5203 7.52 0 0 1-1.9401 0.81 7.8303 7.83 0 0 1-6.0002-0.79 7.8703 7.87 0 0 1-2.9201-10.69v-0.07a7.8903 7.89 0 0 1 10.77-2.88l0.12 0.07a7.8603 7.86 0 0 1 2.7901 10.62v0.07zm-37.701-2.36-9.5004 9.51v4.9c-1.35-0.16-2.6801-0.33-4.0002-0.54v-6l0.58002-0.58 10.1-10.09a7.8703 7.87 0 1 1 2.8401 2.86zm7.3203-5.91a3.4601 3.46 0 1 0-1.6101 2.1 3.3801 3.38 0 0 0 1.6101-2.1zm-29.741 7.82 3.0901 3.1 0.59002 0.59v7.36c-1.3401-0.26-2.6801-0.55-4.0002-0.87v-4.84l-2.5101-2.51a7.5203 7.52 0 0 1-1.9401 0.81 7.8803 7.88 0 1 1 1.9101-14.43 7.8703 7.87 0 0 1 2.8901 10.75z" style="fill:#1a1a1a;"/>';
-	sP['00']['head'] = head;
-	sP['00']['mouth'] = '<path d="m94.19 136.84h42.632a3.7801 3.78 0 0 1 3.7802 3.78v3.22a15.231 15.23 0 0 1-15.211 15.16h-19.781a15.251 15.25 0 0 1-15.221-15.16v-3.22a3.8002 3.8 0 0 1 3.7802-3.78z" style="fill:#fff;'+str+'3px;stroke:#1a1a1a;"/><path d="m130.96 136.84v21.16m-30.911-21.16v21.16m10.34-21.16v22.16m10.31-22.2v22.2" style="fill:none;'+str+'3px;stroke:#1a1a1a;"/>';
-	sP['00']['eyes'] = '<path d="m83.739 83.92h63.533a19.101 19.1 0 0 1 19.051 19 19.111 19.11 0 0 1-19.051 19h-63.533a19.091 19.09 0 0 1-19.001-19 19.091 19.09 0 0 1 19.001-19z" style="fill:#1a1a1a;"/><path d="m140.23 93.54a9.3804 9.38 0 1 0 9.3804 9.38 9.3804 9.38 0 0 0-9.3804-9.38zm-49.402 0a9.3804 9.38 0 1 0 9.3804 9.38 9.3904 9.39 0 0 0-9.3804-9.38z" style="fill:#e6e7e8;"/><rect x="79.795" y="98.627" width="71.471" height="8.5859" ry="4.2929" style="fill:#b3b3b3;"/>';
-	sP['00']['top'] = '<path d="m32.902 67.662c-0.36295 1.7227-6.2342 30.695 5.6133 52.596 4.5843 8.4743 9.0081 13.239 12.75 15.893a67.7 67.7 0 0 1-3.4688-21.35 67.7 67.7 0 0 1 2.332-17.658c-4.4914-2.4646-10.868-6.9012-13.834-13.52-4.1626-9.285-3.6155-14.673-3.3926-15.961zm165.19 0c0.22292 1.2882 0.77005 6.6759-3.3926 15.961-2.9664 6.6183-9.3426 11.055-13.834 13.52a67.7 67.7 0 0 1 2.332 17.658 67.7 67.7 0 0 1-3.4688 21.35c3.7419-2.6532 8.1657-7.4183 12.75-15.893 11.847-21.9 5.9762-50.873 5.6133-52.596z" style="fill:#fff;"/><path d="m115.73 13.191c-7.3787-0.13351-13.509 5.7888-13.631 13.168-0.10128 5.8827 3.4508 10.518 8.0566 12.52 1.061 0.46115 2.1869 0.78009 3.3418 0.95703v8.4291c0.66778-0.02035 1.3358-0.03077 2.0039-0.03125 0.66547-9e-5 1.3309 0.0097 1.9961 0.0293v-8.4115c2.6002-0.38406 5.1586-1.5484 7.3086-3.625 4.2322-4.0878 4.9991-9.8755 3.1582-14.549-1.8407-4.6726-6.3502-8.3834-12.232-8.4863z" style="fill:#fff;"/>';
+  sP['00'] = [];
+  sP['00']['env'] = env;
+  sP['00']['clo'] = '<path d="m141.74 195a114.93 114.93 0 0 1 37.912 16.45l0.07 0.05c-1.17 0.79-2.3601 1.55-3.5601 2.29a115.55 115.55 0 0 1-120.95 0.21q-2.0001-1.23-4.0002-2.54a114.79 114.79 0 0 1 38.002-16.5 116.21 116.21 0 0 1 15.791-2.49v-14.57c1.32 0.22 2.6501 0.39 4.0002 0.51 2.0001 0.19 4.0002 0.28 6.1202 0.29a64.333 64.33 0 0 0 8.8804-0.62c0.67003-0.09 1.3401-0.2 2.0001-0.31v14.69a118 118 0 0 1 15.741 2.54z" style="fill:#fff;"/><path d="m79.292 212a3.4601 3.46 0 0 0 3.8902 5.07 3.3801 3.38 0 0 0 2.1001-1.61 3.4701 3.47 0 0 0-1.2801-4.72 3.4201 3.42 0 0 0-2.6201-0.34 3.5101 3.51 0 0 0-2.0901 1.6zm60.122 0.46a3.4901 3.49 0 0 0 1.21 4.7h0.06a3.4601 3.46 0 0 0 4.7202-1.27l0.07-0.13a3.4601 3.46 0 0 0-1.34-4.6 3.4601 3.46 0 0 0-2.5801-0.32 3.5301 3.53 0 0 0-2.1001 1.61zm9.8004 5.7 5.8602 5.87c-1.39 0.5-2.7901 1-4.2102 1.44l-4.4802-4.47a7.5203 7.52 0 0 1-1.9401 0.81 7.8303 7.83 0 0 1-6.0002-0.79 7.8703 7.87 0 0 1-2.9201-10.69v-0.07a7.8903 7.89 0 0 1 10.77-2.88l0.12 0.07a7.8603 7.86 0 0 1 2.7901 10.62v0.07zm-37.701-2.36-9.5004 9.51v4.9c-1.35-0.16-2.6801-0.33-4.0002-0.54v-6l0.58002-0.58 10.1-10.09a7.8703 7.87 0 1 1 2.8401 2.86zm7.3203-5.91a3.4601 3.46 0 1 0-1.6101 2.1 3.3801 3.38 0 0 0 1.6101-2.1zm-29.741 7.82 3.0901 3.1 0.59002 0.59v7.36c-1.3401-0.26-2.6801-0.55-4.0002-0.87v-4.84l-2.5101-2.51a7.5203 7.52 0 0 1-1.9401 0.81 7.8803 7.88 0 1 1 1.9101-14.43 7.8703 7.87 0 0 1 2.8901 10.75z" style="fill:#1a1a1a;"/>';
+  sP['00']['head'] = '';
+  sP['00']['mouth'] = '<path d="m94.19 136.84h42.632a3.7801 3.78 0 0 1 3.7802 3.78v3.22a15.231 15.23 0 0 1-15.211 15.16h-19.781a15.251 15.25 0 0 1-15.221-15.16v-3.22a3.8002 3.8 0 0 1 3.7802-3.78z" style="fill:#fff;' + str + '3px;stroke:#1a1a1a;"/><path d="m130.96 136.84v21.16m-30.911-21.16v21.16m10.34-21.16v22.16m10.31-22.2v22.2" style="fill:none;' + str + '3px;stroke:#1a1a1a;"/>';
+  sP['00']['eyes'] = '<path d="m83.739 83.92h63.533a19.101 19.1 0 0 1 19.051 19 19.111 19.11 0 0 1-19.051 19h-63.533a19.091 19.09 0 0 1-19.001-19 19.091 19.09 0 0 1 19.001-19z" style="fill:#1a1a1a;"/><path d="m140.23 93.54a9.3804 9.38 0 1 0 9.3804 9.38 9.3804 9.38 0 0 0-9.3804-9.38zm-49.402 0a9.3804 9.38 0 1 0 9.3804 9.38 9.3904 9.39 0 0 0-9.3804-9.38z" style="fill:#e6e7e8;"/><rect x="79.795" y="98.627" width="71.471" height="8.5859" ry="4.2929" style="fill:#b3b3b3;"/>';
+  sP['00']['top'] = '<path d="m32.902 67.662c-0.36295 1.7227-6.2342 30.695 5.6133 52.596 4.5843 8.4743 9.0081 13.239 12.75 15.893a67.7 67.7 0 0 1-3.4688-21.35 67.7 67.7 0 0 1 2.332-17.658c-4.4914-2.4646-10.868-6.9012-13.834-13.52-4.1626-9.285-3.6155-14.673-3.3926-15.961zm165.19 0c0.22292 1.2882 0.77005 6.6759-3.3926 15.961-2.9664 6.6183-9.3426 11.055-13.834 13.52a67.7 67.7 0 0 1 2.332 17.658 67.7 67.7 0 0 1-3.4688 21.35c3.7419-2.6532 8.1657-7.4183 12.75-15.893 11.847-21.9 5.9762-50.873 5.6133-52.596z" style="fill:#fff;"/><path d="m115.73 13.191c-7.3787-0.13351-13.509 5.7888-13.631 13.168-0.10128 5.8827 3.4508 10.518 8.0566 12.52 1.061 0.46115 2.1869 0.78009 3.3418 0.95703v8.4291c0.66778-0.02035 1.3358-0.03077 2.0039-0.03125 0.66547-9e-5 1.3309 0.0097 1.9961 0.0293v-8.4115c2.6002-0.38406 5.1586-1.5484 7.3086-3.625 4.2322-4.0878 4.9991-9.8755 3.1582-14.549-1.8407-4.6726-6.3502-8.3834-12.232-8.4863z" style="fill:#fff;"/>';
 
 
-  // Girl
-	sP['01'] = [];
-	sP['01']['env'] = env;
-	sP['01']['clo'] = '';
-	sP['01']['head'] = head;
-	sP['01']['mouth'] = '';
-	sP['01']['eyes'] = '';
-	sP['01']['top'] = '';
+  // 01_final
+  sP['01'] = [];
+  sP['01']['env'] = env;
+  sP['01']['clo'] = '<path d="M142.73 181.39a27.45 27.45 0 0 0-5.93-13.59c-1 .47-2 .9-3 1.29v14.65a18.35 18.35 0 1 1-36.7 0v-14.53c-1.07-.39-2.11-.82-3.13-1.29a27.4 27.4 0 0 0-5.84 13.47 26.87 26.87 0 0 0-.27 3.83 27.59 27.59 0 0 0 55.18 0 28.42 28.42 0 0 0-.31-3.83Z" style="fill:#b3b3b3;fill-opacity:1"/><path d="M142.73 181.39a28.42 28.42 0 0 1 .27 3.83 27.59 27.59 0 0 1-55.18 0 26.87 26.87 0 0 1 .27-3.83 72.56 72.56 0 0 0-35.42 31 115.55 115.55 0 0 0 125.52.08 72.49 72.49 0 0 0-35.46-31.08Z" style="fill:#1a1a1a;fill-opacity:1"/>';
+  sP['01']['head'] = '<path d="M164.44 96.62V73.87q0-2.13-.18-4.23c-2-24.86-21.79-44.39-45.86-44.39h-5.88c-24.07 0-43.83 19.51-45.86 44.39q-.18 2.1-.18 4.23v22.75a12.74 12.74 0 0 0-11.29 12.67v.85a12.77 12.77 0 0 0 11.29 12.68v.52c0 21.19 12.86 39.22 30.79 45.87v14.53a18.41 18.41 0 0 0 18.36 18.35A18.41 18.41 0 0 0 134 183.74v-14.65c17.75-6.74 30.46-24.67 30.46-45.75v-.52a12.77 12.77 0 0 0 11.29-12.68v-.85a12.74 12.74 0 0 0-11.31-12.67Z" style="fill:#e5e5e5;fill-opacity:1"/>';
+  sP['01']['mouth'] = '<path d="M98.37 134.43c0 3.7.79 7.73 3.71 10.49 2.14 2 5.43 3.35 10.46 3.35h5c5.34 0 8.72-1.5 10.84-3.73 2.62-2.73 3.31-6.58 3.33-10.11Z" style="fill:#fff;fill-opacity:1"/>';
+  sP['01']['eyes'] = '<rect x="77.55" y="81.87" width="32.5" height="12.75" rx="6.01" style="fill:#1a1a1a;fill-opacity:1"/><rect x="122.05" y="81.87" width="30.5" height="12.75" rx="6.01" style="fill:#1a1a1a;fill-opacity:1"/><path d="M100.17 116.81v-12.48a6 6 0 0 0-6-6h-.74a6 6 0 0 0-6 6v12.48a6 6 0 0 0 6 6h.74a6 6 0 0 0 6-6Zm-1.91-5.94a1.79 1.79 0 0 1-3.58 0v-7.06a1.79 1.79 0 0 1 3.58 0Z" style="fill:#1a1a1a;fill-opacity:1"/><path d="M96.47 102a1.79 1.79 0 0 0-1.79 1.79v7.06a1.79 1.79 0 0 0 3.58 0v-7.06a1.79 1.79 0 0 0-1.79-1.79Z" style="fill:#fff;fill-opacity:1"/><path d="M137.67 98.32h-.74a6 6 0 0 0-6 6v12.48a6 6 0 0 0 6 6h.74a6 6 0 0 0 6-6v-12.47a6 6 0 0 0-6-6.01Zm4.09 12.55a1.79 1.79 0 0 1-3.58 0v-7.06a1.79 1.79 0 1 1 3.58 0Z" style="fill:#1a1a1a;fill-opacity:1"/><path d="M140 102a1.79 1.79 0 0 0-1.79 1.79v7.06a1.79 1.79 0 0 0 3.58 0v-7.06A1.79 1.79 0 0 0 140 102Z" style="fill:#fff;fill-opacity:1"/>';
+  sP['01']['top'] = '<path d="m199.76 114.9-18-49.16a26 26 0 0 0 7.39-18.19v-.34A26.11 26.11 0 0 0 163 21.11H77.83a24.14 24.14 0 0 0-3.53-.27c-13.67 0-24.75 11.76-24.75 26.26v22l-16.8 45.8c-2.21 6 1.18 12.85 7.62 15.21a12.72 12.72 0 0 0 9.18-.11v2.75c0 6.42 5.53 11.66 12.38 11.66a12.82 12.82 0 0 0 7.78-2.6 50.79 50.79 0 0 1-3.45-18.47v-.52A12.8 12.8 0 0 1 55 110.14v-.85a12.73 12.73 0 0 1 10.84-12.6c.15 0 .3-.06.45-.07l8.06-23.13.05-.13A24.42 24.42 0 0 0 95 61.5a26.08 26.08 0 0 0 22.06 12.15h47.2v23a12.29 12.29 0 0 1 2.65.6 12.74 12.74 0 0 1 8.64 12.07v.85a12.82 12.82 0 0 1-11.29 12.68v.52a51 51 0 0 1-3.44 18.46 12.82 12.82 0 0 0 7.8 2.61c6.86 0 12.38-5.24 12.38-11.66V129a12.63 12.63 0 0 0 11.19 1.15c6.39-2.4 9.81-9.22 7.57-15.25Z" style="fill:#b3b3b3;fill-opacity:1"/>';
 
 
-  // Blonde
-	sP['02'] = [];
-	sP['02']['env'] = env;
-	sP['02']['clo'] = '';
-	sP['02']['head'] = head;
-	sP['02']['mouth'] = '';
-	sP['02']['eyes'] = '';
-	sP['02']['top'] = '';
+  // 02_final
+  sP['02'] = [];
+  sP['02']['env'] = env;
+  sP['02']['clo'] = '<path d="M142.73 181.39a28.42 28.42 0 0 1 .27 3.83 27.59 27.59 0 0 1-55.18 0 26.87 26.87 0 0 1 .27-3.83 72.56 72.56 0 0 0-35.42 31 115.55 115.55 0 0 0 125.52.08 72.49 72.49 0 0 0-35.46-31.08Z" id="path34" style="fill:#5a5a5a;fill-opacity:1"/><path d="M142.73 181.39a27.45 27.45 0 0 0-5.93-13.59c-1 .47-2 .9-3 1.29v14.65a18.35 18.35 0 1 1-36.7 0v-14.53c-1.07-.39-2.11-.82-3.13-1.29a27.4 27.4 0 0 0-5.84 13.47 26.87 26.87 0 0 0-.27 3.83 27.59 27.59 0 0 0 55.18 0 28.42 28.42 0 0 0-.31-3.83Z" id="path36" style="fill:#b3b3b3;fill-opacity:1"/>';
+  sP['02']['head'] = '<path d="M164.44 96.62V73.87q0-2.13-.18-4.23c-2-24.86-21.79-44.39-45.86-44.39h-5.88c-24.07 0-43.83 19.51-45.86 44.39q-.18 2.1-.18 4.23v22.75a12.74 12.74 0 0 0-11.29 12.67v.85a12.77 12.77 0 0 0 11.29 12.68v.52c0 21.19 12.86 39.22 30.79 45.87v14.53a18.41 18.41 0 0 0 18.36 18.35A18.41 18.41 0 0 0 134 183.74v-14.65c17.75-6.74 30.46-24.67 30.46-45.75v-.52a12.77 12.77 0 0 0 11.29-12.68v-.85a12.74 12.74 0 0 0-11.31-12.67Z" id="path8" style="fill:#fff;fill-opacity:1"/><path id="polygon14" style="fill:#7c7c7c;fill-opacity:1" d="m160.28 20.19 3.44 10.88 8.41-7.71-2.46 11.15 11.15-2.46-7.71 8.42 10.88 3.44-10.88 3.43 7.71 8.42-11.15-2.46 2.46 11.14-8.41-7.7-3.44 10.88-3.44-10.88-8.42 7.7 2.46-11.14-11.14 2.46 7.7-8.42-10.88-3.43 10.88-3.44-7.7-8.42 11.14 2.46-2.46-11.15 8.42 7.71 3.44-10.88z"/>';
+  sP['02']['mouth'] = '<path d="M127.16 135.83v-.73a6 6 0 0 0-6-6h-12.49a6 6 0 0 0-6 6v.73a6 6 0 0 0 3.93 5.64 6 6 0 0 0-3.93 5.63v.73a6 6 0 0 0 6 6h12.48a6 6 0 0 0 6-6v-.73a6 6 0 0 0-3.93-5.63 6 6 0 0 0 3.94-5.64Z" id="path10" style="fill:#5a5a5a;fill-opacity:1"/>';
+  sP['02']['eyes'] = '<path d="M172.22 98.33h-2.93a18.22 18.22 0 0 0-17.67-13.8H136a18.18 18.18 0 0 0-12.9 5.36 18.5 18.5 0 0 0-3.61 5.17h-7.78a18.68 18.68 0 0 0-3.6-5.17 18.2 18.2 0 0 0-12.91-5.36H79.51a18.2 18.2 0 0 0-17.67 13.8h-2.68a3.39 3.39 0 0 0-3.39 3.39v1.17a3.4 3.4 0 0 0 3.39 3.4h2.15a18.25 18.25 0 0 0 18.2 17.47h15.65A18.27 18.27 0 0 0 113 109.5h5.23A18.26 18.26 0 0 0 136 123.76h15.66a18.26 18.26 0 0 0 18.2-17.47h2.4a3.4 3.4 0 0 0 3.39-3.4v-1.17a3.39 3.39 0 0 0-3.43-3.39Zm-104.89 4.43a12.2 12.2 0 0 1 12.18-12.18h2.17l-12.7 21a12.16 12.16 0 0 1-1.65-6.1ZM82 115.87l-1.11 1.83h-1.4a12.13 12.13 0 0 1-2.19-.21l1-1.68 15.27-25.23h1.59a12.24 12.24 0 0 1 2 .19Zm15.32 1.62 1.23-2 6.55-10.85 2.1-3.48a12.35 12.35 0 0 1 .12 1.62v2.76a12.15 12.15 0 0 1-1.67 6.12 12.17 12.17 0 0 1-8.31 5.83ZM136 90.58h2.18l-12.7 21a12.07 12.07 0 0 1-1.66-6.1v-2.76A12.2 12.2 0 0 1 136 90.58Zm15.66 0a12 12 0 0 1 2 .19l-15.16 25.1H136c-.39 0-.78 0-1.16-.06L150 90.58Zm2.18 26.91 1.22-2 8.66-14.33a12.35 12.35 0 0 1 .12 1.62v2.76a12.22 12.22 0 0 1-10 12Z" id="path32" style="fill:#1a1a1a;fill-opacity:1"/><path d="M95.16 84.53a18.2 18.2 0 0 1 12.91 5.36 15.2 15.2 0 0 0-12.91-7.19H79.51a15.18 15.18 0 0 0-12.91 7.19 18.18 18.18 0 0 1 12.91-5.36Z" id="path16" style="fill:#fff;fill-opacity:1"/><path d="M79.51 90.58a12.2 12.2 0 0 0-12.18 12.18v2.76a12.16 12.16 0 0 0 1.65 6.1l12.7-21Z" id="path18" style="fill:#fff;fill-opacity:1"/><path d="m93.57 90.58-15.23 25.23-1 1.68a12.13 12.13 0 0 0 2.19.21h1.4l1.07-1.83 15.16-25.1a12.24 12.24 0 0 0-2-.19Z" id="path20" style="fill:#fff;fill-opacity:1"/><path d="m105.12 104.62-6.55 10.85-1.23 2a12.17 12.17 0 0 0 8.33-5.85 12.15 12.15 0 0 0 1.67-6.12v-2.76a12.35 12.35 0 0 0-.12-1.62Z" id="path22" style="fill:#fff;fill-opacity:1"/><path d="M151.62 84.53a18.18 18.18 0 0 1 12.9 5.36 15.17 15.17 0 0 0-12.9-7.19H136a15.17 15.17 0 0 0-12.9 7.19 18.18 18.18 0 0 1 12.9-5.36Z" id="path24" style="fill:#fff;fill-opacity:1"/><path d="m155 115.47-1.22 2a12.22 12.22 0 0 0 10-12v-2.76a12.35 12.35 0 0 0-.12-1.62Z" id="path26" style="fill:#fff;fill-opacity:1"/><path d="M136 90.58a12.2 12.2 0 0 0-12.18 12.18v2.76a12.07 12.07 0 0 0 1.66 6.1l12.7-21Z" id="path28" style="fill:#fff;fill-opacity:1"/><path d="m150 90.58-15.2 25.23c.38 0 .77.06 1.16.06h2.51l15.16-25.1a12 12 0 0 0-2-.19Z" id="path30" style="fill:#fff;fill-opacity:1"/>';
+  sP['02']['top'] = '<path d="M178.24 67.73a63.34 63.34 0 0 0-125.94 0 46.58 46.58 0 1 0 25.58 87.57 50 50 0 0 1-11.4-32v-.52a12.77 12.77 0 0 1-11.29-12.68v-.85a12.74 12.74 0 0 1 11.29-12.63v-24.1h97.9v24.1a12.74 12.74 0 0 1 11.29 12.67v.85a12.77 12.77 0 0 1-11.29 12.68v.52a50 50 0 0 1-11.37 32 46.59 46.59 0 1 0 25.17-87.58Z" id="path12" style="fill:#c5c5c5;fill-opacity:1"/>';
 
 
-  // Guy
-	sP['03'] = [];
-	sP['03']['env'] = env;
-	sP['03']['clo'] = '';
-	sP['03']['head'] = head;
-	sP['03']['mouth'] = '';
-	sP['03']['eyes'] = '';
-	sP['03']['top'] = '';
+  // 03_final
+  sP['03'] = [];
+  sP['03']['env'] = env;
+  sP['03']['clo'] = '';
+  sP['03']['head'] = '';
+  sP['03']['mouth'] = '';
+  sP['03']['eyes'] = '';
+  sP['03']['top'] = '';
 
 
-  // Country
-	sP['04'] = [];
-	sP['04']['env'] = env;
-	sP['04']['clo'] = '';
-	sP['04']['head'] = head;
-	sP['04']['mouth'] = '';
-	sP['04']['eyes'] = '';
-	sP['04']['top'] = '';
+  // 04_final
+  sP['04'] = [];
+  sP['04']['env'] = env;
+  sP['04']['clo'] = '';
+  sP['04']['head'] = '';
+  sP['04']['mouth'] = '';
+  sP['04']['eyes'] = '';
+  sP['04']['top'] = '';
 
 
-  // Geeknot
-	sP['05'] = [];
-	sP['05']['env'] = env;
-	sP['05']['clo'] = '';
-	sP['05']['head'] = head;
-	sP['05']['mouth'] = '';
-	sP['05']['eyes'] = '';
-	sP['05']['top'] = '';
+  // 05_final
+  sP['05'] = [];
+  sP['05']['env'] = env;
+  sP['05']['clo'] = '';
+  sP['05']['head'] = '';
+  sP['05']['mouth'] = '';
+  sP['05']['eyes'] = '';
+  sP['05']['top'] = '';
 
 
-  // Asian
-	sP['06'] = [];
-	sP['06']['env'] = env;
-	sP['06']['clo'] = '';
-	sP['06']['head'] = head;
-	sP['06']['mouth'] = '';
-	sP['06']['eyes'] = '';
-	sP['06']['top'] = '';
+  // 06_final
+  sP['06'] = [];
+  sP['06']['env'] = env;
+  sP['06']['clo'] = '<circle cx="115.5" cy="248.31" r="72.28" id="circle13" style="fill:#1a1a1a;"/><circle cx="115.5" cy="185.22" r="27.59" id="circle15" style="fill:#fff;"/>';
+  sP['06']['head'] = '<rect x="97.15" y="139.13" width="36.71" height="62.96" rx="18.35" id="rect17" style="fill:#585858;"/><path d="M66.492 69.64c2-24.86 21.79-44.39 45.87-44.39h5.87c24.08 0 43.84 19.51 45.87 44.39q.18 2.1.18 4.23v49.47c0 26.84-20.65 48.66-46.05 48.66h-5.87c-25.42 0-46-21.75-46-48.61V73.87c-.04-1.42.02-2.87.13-4.23z" id="path19" style="fill:#585858;"/><path d="M164.31 96.62v26.2a12.77 12.77 0 0 0 11.3-12.68v-.85a12.75 12.75 0 0 0-11.3-12.67Z" id="path27" style="fill:#585858;"/><path d="M66.36 96.62v26.2a12.77 12.77 0 0 1-11.29-12.68v-.85a12.73 12.73 0 0 1 11.29-12.67Z" id="path31" style="fill:#585858;"/>';
+  sP['06']['mouth'] = '<circle cx="141.55" cy="135.8" r="6.8" id="circle21" style="fill:#7c7c7c;"/><rect x="102.54" y="129.09" width="24.5" height="12.75" rx="6.01" id="rect23" style="fill:#7c7c7c;"/><rect x="102.54" y="141.09" width="24.5" height="12.75" rx="6.01" id="rect25" style="fill:#7c7c7c;"/>';
+  sP['06']['eyes'] = '<path id="rect33" style="fill:#1a1a1a;" d="M105.12 95.06h17.2v14.44h-17.2z"/><rect x="64.3" y="82.7" width="46.07" height="33.17" rx="15.21" id="rect35" style="fill:#b8b8b8;"/><rect x="55.77" y="98.33" width="11.06" height="7.96" rx="3.39" id="rect37" style="fill:#1a1a1a;"/><rect x="64.3" y="87.56" width="46.07" height="33.17" rx="15.21" id="rect39" style="fill:#b8b8b8;stroke:#1a1a1a;stroke-width:6.06;stroke-miterlimit:4;stroke-dasharray:none"/><path id="polygon41" style="fill:#1a1a1a;" d="m67.73 113.69 15.78-26.13H95.4l-19.66 32.55-8.01-6.42z"/><path id="polygon43" style="fill:#1a1a1a;" d="m79.46 120.11 19.65-32.55 10.22 10.09-13.57 22.46h-16.3z"/><rect x="120.76" y="82.7" width="46.07" height="33.17" rx="15.21" id="rect45" style="fill:#b8b8b8;"/><rect x="164.56" y="98.33" width="11.06" height="7.96" rx="3.39" id="rect47" style="fill:#1a1a1a;"/><rect x="120.76" y="87.56" width="46.07" height="33.17" rx="15.21" id="rect49" style="stroke-width:6.06;stroke-miterlimit:10;stroke-dasharray:none;fill:#b8b8b8;stroke:#1a1a1a;"/><path id="polygon51" style="fill:#1a1a1a;" d="m124.19 113.69 15.78-26.13h11.89l-19.66 32.55-8.01-6.42z"/><path id="polygon53" style="fill:#1a1a1a;" d="m135.91 120.11 19.66-32.55 10.21 10.09-13.56 22.46h-16.31z"/>';
+  sP['06']['top'] = '<path d="M52 72.4h126.5v30.84a9.15 9.15 0 0 1-9.15 9.15H61.16a9.15 9.15 0 0 1-9.16-9.15V72.4Z" id="path11" style="fill:#fff;"/><path d="M159.93 29.61A63.36 63.36 0 0 0 52 72.52h126.69a63.17 63.17 0 0 0-18.76-42.91Z" id="path29" style="fill:#fff;"/>';
 
 
-  // Punk
-	sP['07'] = [];
-	sP['07']['env'] = env;
-	sP['07']['clo'] = '';
-	sP['07']['head'] = head;
-	sP['07']['mouth'] = '';
-	sP['07']['eyes'] = '';
-	sP['07']['top'] = '';
+  // 07_final
+  sP['07'] = [];
+  sP['07']['env'] = env;
+  sP['07']['clo'] = '';
+  sP['07']['head'] = '';
+  sP['07']['mouth'] = '';
+  sP['07']['eyes'] = '';
+  sP['07']['top'] = '';
 
 
-  // Afrohair
-	sP['08'] = [];
-	sP['08']['env'] = env;
-	sP['08']['clo'] = '<path d="m141.89 195a114.79 114.79 0 0 1 38 16.5 115.55 115.55 0 0 1-128.47 0 114.79 114.79 0 0 1 38-16.5l15.75 15.75h21z" style="fill:#353535;"/><path d="m146.4 196.14-17.4 17.44-1.17 1.17h-24.34l-1.18-1.17-17.43-17.44c1.49-0.41 3-0.79 4.51-1.14l4.67-1 12.74 12.74h17.69l12.73-12.74 4.67 1c1.52 0.35 3 0.73 4.51 1.14z" style="fill:#919191;"/>';
-	sP['08']['head'] = head;
-	sP['08']['mouth'] = '<path d="m115.68 160.64c7.08 0 13.11-4.93 15.46-11.84a2.14 2.14 0 0 0-1.51-2.6101 2.3 2.3 0 0 0-0.73995-0.0593h-26.42a2.12 2.12 0 0 0-2.31 1.9099 1.85 1.85 0 0 0 0.0593 0.73995c2.3401 6.9301 8.3802 11.86 15.46 11.86z" style="fill:#2f2f2f;"/>';
-	sP['08']['eyes'] = '<path d="m145.38 95.628c-5.1601 2.2597-11.03 2.2597-16.19 0m-47.29 1.75c5.1755-2.2694 11.065-2.2694 16.24 0" style="fill:none;'+str+'5.9998px;stroke:#5e5e5e;"/><path d="m90.016 106.28c-4.4506-0.0105-6.6902 5.3657-3.5508 8.5195 3.1394 3.1539 8.5252 0.93887 8.5352-3.5117 0.0063-2.7522-2.2204-4.9898-4.9727-4.9961l-0.011719-0.01172zm47.281 0c-4.4506-0.0105-6.6902 5.3657-3.5508 8.5195 3.1394 3.1539 8.5252 0.93887 8.5352-3.5117 6e-3 -2.7522-2.2204-4.9898-4.9727-4.9961l-0.01171-0.01172z" style="fill:#1a1a1a;"/>';
-	sP['08']['top'] = '<path d="m108.37 22.019c-6.2698-12.829-17.151-13.396-18.949 1.1769-11.448-9.4583-26.021-4.483-20.361 12.422-12.251-7.9282-24.919 1.7761-17.076 20.853-27.08 2.3646-22.715 24.726-10.111 31.435-9.9002 3.3566-10.701 9.4006-8.464 14.497 2.6574 4.7842 9.0126 6.4737 11.545 9.6519-6.624 0.59419-8.4112 5.6011-5.7404 9.5192 1.6896 2.4787 5.2756 4.2218 8.5971 5.5455 1.0485 0.40658 3.702 1.2732 3.9053 2.4181 0.18744 1.2156-6.7884 3.0055-5.7281 5.2612 0.60648 1.4227 1.7764 2.7151 2.6466 3.7156 1.2807 1.6595 10.755 8.0351 9.4583 4.2049-1.0271-3.7234-2.2148-7.4682-3.1456-11.192-1.1662-5.3069-1.7868-10.721-1.102-16.156 1.4223-5.455 5.069-4.4265 7.7837-8.3588 3.5264-5.7505 2.0296-11.614 2.124-13.575 0.107-1.7868 1.5407-1.1876 3.1884-1.4337 4.3868-0.64196 7.0081-2.1185 8.8377-6.2698 0.77035-1.9259 0.62057-9.7578 0.52426-11.78 0.36378-4.6328 4.1835 0 6.548 0.64196 3.2633 0.88805 6.8797 0.21399 9.0731-2.5037 1.7547-2.3753 2.0864-2.8888 4.6114-0.80245 2.6856 2.2148 4.0979 3.1349 7.6929 3.274 5.5637 0.20329 8.7735-6.2698 11.32-5.6386 3.5201 0.87735 3.6057 5.4567 10.261 4.8682 2.386-0.20329 3.8304-0.86665 5.4032-2.6428 0.88805-0.99505 1.958-2.5037 3.4345-2.6214 1.4658-0.1177 2.3218 2.3646 3.0065 3.4452 1.1926 2.6755 4.0295 3.6513 6.2377 3.3168 1.958-0.17119 3.854-1.4115 5.4268-2.4707 0.99679-0.66102 1.8284-0.81128 1.9256 0.2071 0.29592 2.2271 0.0862 7.7025 0.1596 8.4821 0.10556 8.4609 5.37 10.569 13.223 10.333-0.31871 3.7464 0.0583 11.28 5.4353 14.562 3.9481 2.7604 6.6657 1.2732 6.7299 7.8534 7e-3 6.1914-0.43693 13.061-1.2946 18.189-0.69547 4.0444-1.2412 6.4838-2.5251 10.378-0.64196 1.9152-0.81315 1.9687 1.4123 1.0699 7.1472-3.1456 10.539-11.48 8.3562-18.842-0.43869-2.0436 0.84525-1.7226 2.8781-2.6106 9.5248-4.2363 8.1264-11.335-0.75967-14.273 11.988-3.0926 13.886-8.9002 6.6871-15.375 7.3077-5.9168 3.6378-16.177-2.8032-16.991 12.422-7.0937 5.7349-22.062-5.1036-18.499 4.1728-12.037-5.5637-26.203-21.121-16.894 6.9653-11.373 2.065-22.661-12.101-10.785-3.4559-18.382-15.14-16.584-23.902-5.018 0.09435-20.075-16.001-17.42-18.146-2.5892z" style="fill:#1a1a1a;"/><path d="m5.4353 80.502c7.4468 9.1373 15.632 8.8912 15.632 8.8912s-6.0772 3.7983-6.8369 9.8755c-0.75966 6.088 4.5579 9.6295 8.0994 10.646 3.5522 1.0058 7.0937-2.7925 7.0937-2.7925s-5.8312 10.646-1.5193 15.964c4.3012 5.3176 11.908 3.0386 11.908 3.0386s-5.3283 10.132 1.0057 14.187c5.8312 3.7234 18.542 7.6715 20.511 8.2706-6.0666-9.7472-9.576-21.249-9.576-33.575v-0.0428c0-35.201 28.546-63.747 63.747-63.747 35.212 0 63.758 28.546 63.758 63.747 0 12.476-3.5843 24.116-9.7899 33.949h0.53496s13.931-1.0057 16.21-9.3727c2.279-8.3562 0.75967-9.8756 0.75967-9.8756s10.635 2.0329 13.417-7.5966l2.7926-9.6295s10.132 0 10.892-7.083c0.75963-7.0937-7.0295-12.411-7.0295-12.411s11.459 0.82385 14.498-10.453c1.0164-3.7555 0.83456-8.2171 0.1391-12.497-17.665-41.161-58.569-69.995-106.18-69.995-30.632 0-60.034 12.187-81.679 33.831v0.0107c-13.171 13.171-22.833 29.22-28.386 46.66z" style="fill:#1a1a1a;"/>';
+  // 08_final
+  sP['08'] = [];
+  sP['08']['env'] = env;
+  sP['08']['clo'] = '<path d="m141.89 195a114.79 114.79 0 0 1 38 16.5 115.55 115.55 0 0 1-128.47 0 114.79 114.79 0 0 1 38-16.5l15.75 15.75h21z" style="fill:#353535;"/><path d="m146.4 196.14-17.4 17.44-1.17 1.17h-24.34l-1.18-1.17-17.43-17.44c1.49-0.41 3-0.79 4.51-1.14l4.67-1 12.74 12.74h17.69l12.73-12.74 4.67 1c1.52 0.35 3 0.73 4.51 1.14z" style="fill:#919191;"/>';
+  sP['08']['head'] = '';
+  sP['08']['mouth'] = '<path d="m115.68 160.64c7.08 0 13.11-4.93 15.46-11.84a2.14 2.14 0 0 0-1.51-2.6101 2.3 2.3 0 0 0-0.73995-0.0593h-26.42a2.12 2.12 0 0 0-2.31 1.9099 1.85 1.85 0 0 0 0.0593 0.73995c2.3401 6.9301 8.3802 11.86 15.46 11.86z" style="fill:#2f2f2f;"/>';
+  sP['08']['eyes'] = '<path d="m145.38 95.628c-5.1601 2.2597-11.03 2.2597-16.19 0m-47.29 1.75c5.1755-2.2694 11.065-2.2694 16.24 0" style="fill:none;' + str + '5.9998px;stroke:#5e5e5e;"/><path d="m90.016 106.28c-4.4506-0.0105-6.6902 5.3657-3.5508 8.5195 3.1394 3.1539 8.5252 0.93887 8.5352-3.5117 0.0063-2.7522-2.2204-4.9898-4.9727-4.9961l-0.011719-0.01172zm47.281 0c-4.4506-0.0105-6.6902 5.3657-3.5508 8.5195 3.1394 3.1539 8.5252 0.93887 8.5352-3.5117 6e-3 -2.7522-2.2204-4.9898-4.9727-4.9961l-0.01171-0.01172z" style="fill:#1a1a1a;"/>';
+  sP['08']['top'] = '<path d="m108.37 22.019c-6.2698-12.829-17.151-13.396-18.949 1.1769-11.448-9.4583-26.021-4.483-20.361 12.422-12.251-7.9282-24.919 1.7761-17.076 20.853-27.08 2.3646-22.715 24.726-10.111 31.435-9.9002 3.3566-10.701 9.4006-8.464 14.497 2.6574 4.7842 9.0126 6.4737 11.545 9.6519-6.624 0.59419-8.4112 5.6011-5.7404 9.5192 1.6896 2.4787 5.2756 4.2218 8.5971 5.5455 1.0485 0.40658 3.702 1.2732 3.9053 2.4181 0.18744 1.2156-6.7884 3.0055-5.7281 5.2612 0.60648 1.4227 1.7764 2.7151 2.6466 3.7156 1.2807 1.6595 10.755 8.0351 9.4583 4.2049-1.0271-3.7234-2.2148-7.4682-3.1456-11.192-1.1662-5.3069-1.7868-10.721-1.102-16.156 1.4223-5.455 5.069-4.4265 7.7837-8.3588 3.5264-5.7505 2.0296-11.614 2.124-13.575 0.107-1.7868 1.5407-1.1876 3.1884-1.4337 4.3868-0.64196 7.0081-2.1185 8.8377-6.2698 0.77035-1.9259 0.62057-9.7578 0.52426-11.78 0.36378-4.6328 4.1835 0 6.548 0.64196 3.2633 0.88805 6.8797 0.21399 9.0731-2.5037 1.7547-2.3753 2.0864-2.8888 4.6114-0.80245 2.6856 2.2148 4.0979 3.1349 7.6929 3.274 5.5637 0.20329 8.7735-6.2698 11.32-5.6386 3.5201 0.87735 3.6057 5.4567 10.261 4.8682 2.386-0.20329 3.8304-0.86665 5.4032-2.6428 0.88805-0.99505 1.958-2.5037 3.4345-2.6214 1.4658-0.1177 2.3218 2.3646 3.0065 3.4452 1.1926 2.6755 4.0295 3.6513 6.2377 3.3168 1.958-0.17119 3.854-1.4115 5.4268-2.4707 0.99679-0.66102 1.8284-0.81128 1.9256 0.2071 0.29592 2.2271 0.0862 7.7025 0.1596 8.4821 0.10556 8.4609 5.37 10.569 13.223 10.333-0.31871 3.7464 0.0583 11.28 5.4353 14.562 3.9481 2.7604 6.6657 1.2732 6.7299 7.8534 7e-3 6.1914-0.43693 13.061-1.2946 18.189-0.69547 4.0444-1.2412 6.4838-2.5251 10.378-0.64196 1.9152-0.81315 1.9687 1.4123 1.0699 7.1472-3.1456 10.539-11.48 8.3562-18.842-0.43869-2.0436 0.84525-1.7226 2.8781-2.6106 9.5248-4.2363 8.1264-11.335-0.75967-14.273 11.988-3.0926 13.886-8.9002 6.6871-15.375 7.3077-5.9168 3.6378-16.177-2.8032-16.991 12.422-7.0937 5.7349-22.062-5.1036-18.499 4.1728-12.037-5.5637-26.203-21.121-16.894 6.9653-11.373 2.065-22.661-12.101-10.785-3.4559-18.382-15.14-16.584-23.902-5.018 0.09435-20.075-16.001-17.42-18.146-2.5892z" style="fill:#1a1a1a;"/><path d="m5.4353 80.502c7.4468 9.1373 15.632 8.8912 15.632 8.8912s-6.0772 3.7983-6.8369 9.8755c-0.75966 6.088 4.5579 9.6295 8.0994 10.646 3.5522 1.0058 7.0937-2.7925 7.0937-2.7925s-5.8312 10.646-1.5193 15.964c4.3012 5.3176 11.908 3.0386 11.908 3.0386s-5.3283 10.132 1.0057 14.187c5.8312 3.7234 18.542 7.6715 20.511 8.2706-6.0666-9.7472-9.576-21.249-9.576-33.575v-0.0428c0-35.201 28.546-63.747 63.747-63.747 35.212 0 63.758 28.546 63.758 63.747 0 12.476-3.5843 24.116-9.7899 33.949h0.53496s13.931-1.0057 16.21-9.3727c2.279-8.3562 0.75967-9.8756 0.75967-9.8756s10.635 2.0329 13.417-7.5966l2.7926-9.6295s10.132 0 10.892-7.083c0.75963-7.0937-7.0295-12.411-7.0295-12.411s11.459 0.82385 14.498-10.453c1.0164-3.7555 0.83456-8.2171 0.1391-12.497-17.665-41.161-58.569-69.995-106.18-69.995-30.632 0-60.034 12.187-81.679 33.831v0.0107c-13.171 13.171-22.833 29.22-28.386 46.66z" style="fill:#1a1a1a;"/>';
 
 
-  // Normie Female
-	sP['09'] = [];
-	sP['09']['env'] = env;
-	sP['09']['clo'] = '<path d="m141.75 195a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5l13.85 13.85v-1.2h17.86v3.1h5z" style="fill:#333;"/><polygon points="115.36 207.65 123.37 224.2 148.3 196.86 143.08 189.95" style="fill:#fff;"/><polygon points="115.36 207.65 107.35 224.2 82.42 196.86 87.63 189.95" style="fill:#fff;"/>';
-	sP['09']['head'] = head;
-	sP['09']['mouth'] = '<path d="m126.28 149.82c-6.16 2.43-15.52 2.42-21.56 0" style="fill:none;'+str+'5.9998px;stroke:#1c1c1c;"/>';
-	sP['09']['eyes'] = '<path d="m83.527 103.98v10h10v-10h-10zm53.945 0v10h10v-10h-10z" style="fill:#1a1a1a;"/><path d="m56.621 94.906v11.688h5.3418v6.4922h5.3418v6.1055h5.3223v6.2324h26.846v-6.2324h5.3047v-6.1055h5.1445v-6.0039h11.154v6.0039h5.1446v6.1055h5.3066v6.2324h26.846v-6.2324h5.3203v-6.1055h5.3438v-6.4922h5.3418v-11.688z" style="fill:#1a1a1a;"/><path d="m67.387 100.65v5.9394h5.1992v-5.9394zm5.1992 5.9394v6.4922h5.4238v-6.4922zm5.4238 0h5.1992v-5.9394h-5.1992zm5.1992 0v6.4922h5.4258v-6.4922zm5.4258 6.4922v6.1055h5.1426v-6.1055zm-10.625 0v6.1055h5.1445v-6.1055zm48.281-12.432v5.9394h5.1992v-5.9394zm5.1992 5.9394v6.4922h5.4238v-6.4922zm5.4238 0h5.1992v-5.9394h-5.1992zm5.1992 0v6.4922h5.4258v-6.4922zm5.4258 6.4922v6.1055h5.1426v-6.1055zm-10.625 0v6.1055h5.1445v-6.1055z" style="fill:#fff;"/>';
-	sP['09']['top'] = '<path d="m157.79 67.5a61.31 61.31 0 0 1-42.79 17.43h-55.7c18.16-37.74 68.27-46.85 98.49-17.43z" style="fill:#4d4d4d;"/><path d="m122.93 7.0078c-10.503-0.15729-21.09 1.6448-29.545 5.4316-17.141 7.8999-32.169 23.297-43.973 38.779-5.1703 6.8631-8.7779 13.46-8.1855 18.395 0.93114 12.312 10.372 26.483 11.068 36.9 15.663-72.081 105.99-70.452 124.91-7.0525l4e-3 0.0156c5.616-10.926 8.0682-20.188 8.352-27.653 0.43654-15.607-7.8088-21.149-21.735-28.249 1.7934-3.7704 1.7273-7.5023 2.0625-10.154-0.79964-7.8568-3.6796-13.51-10.43-17.758-5.9434-3.7404-13.06-6.0867-18.463-7.2266-4.5319-0.87895-9.2901-1.3562-14.064-1.4277z" style="fill:#4d4d4d;"/><path d="m42.426 75.338c0.52158 18.689 10.557 74.338-18.115 101.25 12.38 10.603 28.352 19.061 46.025 24.594 11.032-4.6874 22.88-7.4147 34.817-8.5046l0.0633-14.477c-22.49-4.3813-40.766-18.898-48.862-39.967-8.096-21.07-4.7931-44.72 9.2478-62.393zm124.67 2.7207c7.8997 10.886 11.743 24.64 11.787 37.441-0.36632 30.178-22.389 57.576-53.12 62.708l0.0238 14.471c12.282 1.1216 24.518 3.9888 35.825 8.9128 15.488-5.1448 30.007-13.325 42.396-25.043-13.136-22.051-23.282-63.045-18.694-101.55z" style="fill:#4d4d4d;"/><path d="m143.61 46.383c-11.639 0.12482-20.998 1.8906-20.998 1.8906l-9 3.5059c0.63003-0.0191 1.2603-0.0289 1.8906-0.0293h0.0996c35.169 0.055 60.959 27.235 63.283 63.383 7.4e-4 31.157-22.742 57.213-53.106 63.079l-0.0216 14.498c11.567 1.0563 23.154 3.6067 33.887 8.0463 35.952-15.315 55.082-52.303 36.709-68.279-5.018-7.9035-10.44-15.409-9.5544-23.03 5.0545-50.452 0.39626-63.561-43.189-63.064zm-69.966 21.09c-15.286 3.244-17.096 3.73-31.734 6.6953 3.0304 13.081 3.0583 22.274 1.2085 30.012-3.8004 11.361-8.9712 19.787-12.286 28.764-6.8823 22.459-2.9157 31.982 12.093 46.165 8.6595 8.0693 19.861 16.209 30.939 20.647 2.669-1.0316 5.3729-1.9628 8.106-2.792 7.4979-2.275 15.388-3.6535 23.206-4.3673l0.0433-14.393c-23.933-4.5937-44.283-21.98-50.77-45.817-6.3319-23.265 0.51104-48.752 19.195-64.914z" style="fill:#4d4d4d;"/>';
+  // 09_final
+  sP['09'] = [];
+  sP['09']['env'] = env;
+  sP['09']['clo'] = '<path d="m141.75 195a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5l13.85 13.85v-1.2h17.86v3.1h5z" style="fill:#333;"/><polygon points="115.36 207.65 123.37 224.2 148.3 196.86 143.08 189.95" style="fill:#fff;"/><polygon points="115.36 207.65 107.35 224.2 82.42 196.86 87.63 189.95" style="fill:#fff;"/>';
+  sP['09']['head'] = '';
+  sP['09']['mouth'] = '<path d="m126.28 149.82c-6.16 2.43-15.52 2.42-21.56 0" style="fill:none;' + str + '5.9998px;stroke:#1c1c1c;"/>';
+  sP['09']['eyes'] = '<path d="m83.527 103.98v10h10v-10h-10zm53.945 0v10h10v-10h-10z" style="fill:#1a1a1a;"/><path d="m56.621 94.906v11.688h5.3418v6.4922h5.3418v6.1055h5.3223v6.2324h26.846v-6.2324h5.3047v-6.1055h5.1445v-6.0039h11.154v6.0039h5.1446v6.1055h5.3066v6.2324h26.846v-6.2324h5.3203v-6.1055h5.3438v-6.4922h5.3418v-11.688z" style="fill:#1a1a1a;"/><path d="m67.387 100.65v5.9394h5.1992v-5.9394zm5.1992 5.9394v6.4922h5.4238v-6.4922zm5.4238 0h5.1992v-5.9394h-5.1992zm5.1992 0v6.4922h5.4258v-6.4922zm5.4258 6.4922v6.1055h5.1426v-6.1055zm-10.625 0v6.1055h5.1445v-6.1055zm48.281-12.432v5.9394h5.1992v-5.9394zm5.1992 5.9394v6.4922h5.4238v-6.4922zm5.4238 0h5.1992v-5.9394h-5.1992zm5.1992 0v6.4922h5.4258v-6.4922zm5.4258 6.4922v6.1055h5.1426v-6.1055zm-10.625 0v6.1055h5.1445v-6.1055z" style="fill:#fff;"/>';
+  sP['09']['top'] = '<path d="m157.79 67.5a61.31 61.31 0 0 1-42.79 17.43h-55.7c18.16-37.74 68.27-46.85 98.49-17.43z" style="fill:#4d4d4d;"/><path d="m122.93 7.0078c-10.503-0.15729-21.09 1.6448-29.545 5.4316-17.141 7.8999-32.169 23.297-43.973 38.779-5.1703 6.8631-8.7779 13.46-8.1855 18.395 0.93114 12.312 10.372 26.483 11.068 36.9 15.663-72.081 105.99-70.452 124.91-7.0525l4e-3 0.0156c5.616-10.926 8.0682-20.188 8.352-27.653 0.43654-15.607-7.8088-21.149-21.735-28.249 1.7934-3.7704 1.7273-7.5023 2.0625-10.154-0.79964-7.8568-3.6796-13.51-10.43-17.758-5.9434-3.7404-13.06-6.0867-18.463-7.2266-4.5319-0.87895-9.2901-1.3562-14.064-1.4277z" style="fill:#4d4d4d;"/><path d="m42.426 75.338c0.52158 18.689 10.557 74.338-18.115 101.25 12.38 10.603 28.352 19.061 46.025 24.594 11.032-4.6874 22.88-7.4147 34.817-8.5046l0.0633-14.477c-22.49-4.3813-40.766-18.898-48.862-39.967-8.096-21.07-4.7931-44.72 9.2478-62.393zm124.67 2.7207c7.8997 10.886 11.743 24.64 11.787 37.441-0.36632 30.178-22.389 57.576-53.12 62.708l0.0238 14.471c12.282 1.1216 24.518 3.9888 35.825 8.9128 15.488-5.1448 30.007-13.325 42.396-25.043-13.136-22.051-23.282-63.045-18.694-101.55z" style="fill:#4d4d4d;"/><path d="m143.61 46.383c-11.639 0.12482-20.998 1.8906-20.998 1.8906l-9 3.5059c0.63003-0.0191 1.2603-0.0289 1.8906-0.0293h0.0996c35.169 0.055 60.959 27.235 63.283 63.383 7.4e-4 31.157-22.742 57.213-53.106 63.079l-0.0216 14.498c11.567 1.0563 23.154 3.6067 33.887 8.0463 35.952-15.315 55.082-52.303 36.709-68.279-5.018-7.9035-10.44-15.409-9.5544-23.03 5.0545-50.452 0.39626-63.561-43.189-63.064zm-69.966 21.09c-15.286 3.244-17.096 3.73-31.734 6.6953 3.0304 13.081 3.0583 22.274 1.2085 30.012-3.8004 11.361-8.9712 19.787-12.286 28.764-6.8823 22.459-2.9157 31.982 12.093 46.165 8.6595 8.0693 19.861 16.209 30.939 20.647 2.669-1.0316 5.3729-1.9628 8.106-2.792 7.4979-2.275 15.388-3.6535 23.206-4.3673l0.0433-14.393c-23.933-4.5937-44.283-21.98-50.77-45.817-6.3319-23.265 0.51104-48.752 19.195-64.914z" style="fill:#4d4d4d;"/>';
 
 
-  // Older
-	sP['10'] = [];
-	sP['10']['env'] = env;
-	sP['10']['clo'] = '<path d="m141.75 195a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5l15.71 15.75h21z" style="fill:#666;"/><path d="m89.291 195a114.79 114.79 0 0 0-38.002 16.5 115.53 115.53 0 0 0 38.002 16.482zm52.434 0v32.982a115.53 115.53 0 0 0 38-16.482 114.79 114.79 0 0 0-38-16.5z" style="fill:#999;"/><path d="m157.15 199.75c0.2548 7.4501 1.54 14.855 4.9512 21.432a115.53 115.53 0 0 0 17.619-9.6797 114.79 114.79 0 0 0-22.57-11.752zm-83.295 2e-3a114.79 114.79 0 0 0-22.57 11.75 115.53 115.53 0 0 0 17.621 9.6797c3.411-6.5765 4.6944-13.98 4.9492-21.43z" style="fill:#ccc;"/><path d="m99.197 204.97v2e-3l16.302 16.301 16.301-16.301v-2e-3z" style="fill:#fff;"/>';
-	sP['10']['head'] = head;
-	sP['10']['mouth'] = '<path d="m100.19 152.09c2.8726 4.0616 9.8095 4.7232 15.119-0.45432 5.0656 4.5134 11.167 5.6898 15.495 0.31458" style="fill:none;'+str+'5.8949;stroke:#333;"/><path d="m109.67 135.53c-0.9758 0.0743-2.05 0.45327-3.1485 0.99414-4.3235 2.1399-7.3862 4.2557-10.639 7.1406-0.6251 0.5715 0.1168 0.77785 1.4238 0.87304 5.6967 0.0536 14.384 0.41404 15.098-0.875 1.9251-2.0788 1.7969-5.3303-0.1816-7.3008-0.701-0.67533-1.5769-0.90632-2.5527-0.83203zm11.656 0c-0.9758-0.0743-1.8517 0.1567-2.5527 0.83203-1.9785 1.9705-2.1067 5.222-0.1817 7.3008 0.7142 1.289 9.401 0.9286 15.098 0.875 1.307-0.0952 2.0489-0.30154 1.4238-0.87304-3.2524-2.8849-6.3151-5.0007-10.639-7.1406-1.0985-0.54087-2.1727-0.91985-3.1485-0.99414z" style="fill:#333;"/>';
-	sP['10']['eyes'] = '<path d="m97.56 107.84a10.63 10.63 0 0 1-15 0.13l-0.13-0.13" style="fill:none;'+str+'6.3px;stroke:#000;"/><path d="m148.59 107.84a10.63 10.63 0 0 1-15 0.13l-0.13-0.13" style="fill:none;'+str+'6.3px;stroke:#000;"/>';
-	sP['10']['top'] = '<path d="m41.668 87.073c-9.2319-0.0231-11.63 6.5104 2.2676 17.66-14.015 1.1231-4.3662 16.457 4.875 24.66 4.0686 3.0199 6.4647 5.4657 5.5078 1.1348-1.2079-4.9178-1.8184-9.9634-1.8184-15.027 3.26e-4 -7.5692 1.2547-15.016 3.7883-22.183 0.57048-1.7876 1.0689-2.0306-0.37721-2.6839-5.5405-2.4478-10.375-3.5511-14.243-3.5608z" style="fill:#ccc;"/><path d="m185.48 89.513c-2.4418-0.11189-5.4618 0.81187-9.5148 3.2121-1.314 0.81729-0.70075 1.995-0.32301 3.2653 3.194 10.982 3.8215 22.462 1.2538 33.628-0.31613 1.688-0.47649 3.569 2.6953 1.3516 7.7016-5.371 19.17-18.734 16.918-26.105-1.4251-3.9177-11.4-0.35546-11.4-0.35546s4.987-4.2755 5.3437-9.6191c0.20048-3.0057-1.5237-5.2189-4.9726-5.377z" style="fill:#ccc;"/><path d="m91.689 36.108c-3.7298-7.3864-9.5859-10.504-17.578-6.7891-9.5194 4.5907-15.629 18.444-13.416 29.232 0 0-8.5511-4.9878-18.17-3.5625-19.623 8.094-1.4102 29.869 10.817 37.342 2.075 1.297 2.5792 1.7432 3.4291-0.37685 2.6746-6.5374 6.1886-12.722 11.297-17.709 4.1039 8.7427 14.629 4.1809 20.006-0.14062 4.4873 9.6838 10.377 6.3535 15.377 3.4785 4.0764 7.8829 10.756 7.25 17.631 0.0625 4.875 4.5625 14.713 4.1867 15.555-3.426 8.4753 2.6244 14.012 10.437 22.962-1.4764 8.8552 6.8221 14.407 16.853 17.122 27.51 0.34 1.554 1.175 0.85565 2.2212 0.44315 10.255-4.286 22.842-15.749 15.705-23.975-3.5623-3.5623-13.539-2.1387-13.539-2.1387s6.77-7.1233 9.2637-18.168c2.4936-11.043-23.514-4.9883-23.514-4.9883s7.4818-5.6993 12.113-13.537c4.6314-7.8378-2.4943-11.756-11.045-11.043-8.5496 0.71204-17.1 7.4805-17.1 7.4805s3.3946-7.8055-3.5625-12.826c-9.5935-6.9234-23.869 6.4121-23.869 6.4121-4.2562-26.835-24.872-6.386-31.707 8.1953z" style="fill:#ccc;"/>';
+  // 10_final
+  sP['10'] = [];
+  sP['10']['env'] = env;
+  sP['10']['clo'] = '<path d="m141.75 195a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5l15.71 15.75h21z" style="fill:#666;"/><path d="m89.291 195a114.79 114.79 0 0 0-38.002 16.5 115.53 115.53 0 0 0 38.002 16.482zm52.434 0v32.982a115.53 115.53 0 0 0 38-16.482 114.79 114.79 0 0 0-38-16.5z" style="fill:#999;"/><path d="m157.15 199.75c0.2548 7.4501 1.54 14.855 4.9512 21.432a115.53 115.53 0 0 0 17.619-9.6797 114.79 114.79 0 0 0-22.57-11.752zm-83.295 2e-3a114.79 114.79 0 0 0-22.57 11.75 115.53 115.53 0 0 0 17.621 9.6797c3.411-6.5765 4.6944-13.98 4.9492-21.43z" style="fill:#ccc;"/><path d="m99.197 204.97v2e-3l16.302 16.301 16.301-16.301v-2e-3z" style="fill:#fff;"/>';
+  sP['10']['head'] = '';
+  sP['10']['mouth'] = '<path d="m100.19 152.09c2.8726 4.0616 9.8095 4.7232 15.119-0.45432 5.0656 4.5134 11.167 5.6898 15.495 0.31458" style="fill:none;' + str + '5.8949;stroke:#333;"/><path d="m109.67 135.53c-0.9758 0.0743-2.05 0.45327-3.1485 0.99414-4.3235 2.1399-7.3862 4.2557-10.639 7.1406-0.6251 0.5715 0.1168 0.77785 1.4238 0.87304 5.6967 0.0536 14.384 0.41404 15.098-0.875 1.9251-2.0788 1.7969-5.3303-0.1816-7.3008-0.701-0.67533-1.5769-0.90632-2.5527-0.83203zm11.656 0c-0.9758-0.0743-1.8517 0.1567-2.5527 0.83203-1.9785 1.9705-2.1067 5.222-0.1817 7.3008 0.7142 1.289 9.401 0.9286 15.098 0.875 1.307-0.0952 2.0489-0.30154 1.4238-0.87304-3.2524-2.8849-6.3151-5.0007-10.639-7.1406-1.0985-0.54087-2.1727-0.91985-3.1485-0.99414z" style="fill:#333;"/>';
+  sP['10']['eyes'] = '<path d="m97.56 107.84a10.63 10.63 0 0 1-15 0.13l-0.13-0.13" style="fill:none;' + str + '6.3px;stroke:#000;"/><path d="m148.59 107.84a10.63 10.63 0 0 1-15 0.13l-0.13-0.13" style="fill:none;' + str + '6.3px;stroke:#000;"/>';
+  sP['10']['top'] = '<path d="m41.668 87.073c-9.2319-0.0231-11.63 6.5104 2.2676 17.66-14.015 1.1231-4.3662 16.457 4.875 24.66 4.0686 3.0199 6.4647 5.4657 5.5078 1.1348-1.2079-4.9178-1.8184-9.9634-1.8184-15.027 3.26e-4 -7.5692 1.2547-15.016 3.7883-22.183 0.57048-1.7876 1.0689-2.0306-0.37721-2.6839-5.5405-2.4478-10.375-3.5511-14.243-3.5608z" style="fill:#ccc;"/><path d="m185.48 89.513c-2.4418-0.11189-5.4618 0.81187-9.5148 3.2121-1.314 0.81729-0.70075 1.995-0.32301 3.2653 3.194 10.982 3.8215 22.462 1.2538 33.628-0.31613 1.688-0.47649 3.569 2.6953 1.3516 7.7016-5.371 19.17-18.734 16.918-26.105-1.4251-3.9177-11.4-0.35546-11.4-0.35546s4.987-4.2755 5.3437-9.6191c0.20048-3.0057-1.5237-5.2189-4.9726-5.377z" style="fill:#ccc;"/><path d="m91.689 36.108c-3.7298-7.3864-9.5859-10.504-17.578-6.7891-9.5194 4.5907-15.629 18.444-13.416 29.232 0 0-8.5511-4.9878-18.17-3.5625-19.623 8.094-1.4102 29.869 10.817 37.342 2.075 1.297 2.5792 1.7432 3.4291-0.37685 2.6746-6.5374 6.1886-12.722 11.297-17.709 4.1039 8.7427 14.629 4.1809 20.006-0.14062 4.4873 9.6838 10.377 6.3535 15.377 3.4785 4.0764 7.8829 10.756 7.25 17.631 0.0625 4.875 4.5625 14.713 4.1867 15.555-3.426 8.4753 2.6244 14.012 10.437 22.962-1.4764 8.8552 6.8221 14.407 16.853 17.122 27.51 0.34 1.554 1.175 0.85565 2.2212 0.44315 10.255-4.286 22.842-15.749 15.705-23.975-3.5623-3.5623-13.539-2.1387-13.539-2.1387s6.77-7.1233 9.2637-18.168c2.4936-11.043-23.514-4.9883-23.514-4.9883s7.4818-5.6993 12.113-13.537c4.6314-7.8378-2.4943-11.756-11.045-11.043-8.5496 0.71204-17.1 7.4805-17.1 7.4805s3.3946-7.8055-3.5625-12.826c-9.5935-6.9234-23.869 6.4121-23.869 6.4121-4.2562-26.835-24.872-6.386-31.707 8.1953z" style="fill:#ccc;"/>';
 
 
-  // Firehair
-	sP['11'] = [];
-	sP['11']['env'] = env;
-	sP['11']['clo'] = '<path d="m116 203.13c-0.12 0-0.25 0.12-0.49 0.12s-0.25-0.12-0.49-0.12zm-27.29-8c0.87-0.25 1.72-0.47 2.56-0.69a32.37 32.37 0 0 0 0.3 8.57 21.5 21.5 0 0 0 7 6.88c6.41-6 16.8-6.64 16.8-6.64s10.5 0.58 17 6.69a21.61 21.61 0 0 0 6.93-6.66 32.34 32.34 0 0 0 0.35-8.84l2.13 0.56a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.64 114.64 0 0 1 37.38-16.37z" style="fill:#e9e9e9;"/><path d="m126.15 206-3.92 7.83h-13.46l-3.92-7.83a36.59 36.59 0 0 1 10.65-2.7 35.66 35.66 0 0 1 10.65 2.7z" style="fill:#818181;"/><path d="m124.54 230.65-2.18-16.74h-13.47l-2.19 16.76c2.9 0.22 5.84 0.33 8.8 0.33s6.06-0.12 9-0.35z" style="fill:#989898;"/><path d="m134.84 186s0.86 9.8-19.34 17.26c0 0 15.79 0.86 20.57 11.76 0.12 0.49 9.3-23.26-1.23-29z" style="fill:#fff;"/><path d="m96.16 186c-10.41 5.76-1.35 29.39-1.1 29 4.65-10.78 20.56-11.76 20.56-11.76-20.32-7.45-19.46-17.24-19.46-17.24z" style="fill:#fff;"/>';
-	sP['11']['head'] = head;
-	sP['11']['mouth'] = '<path d="m118.57 165.14a8.66 8.66 0 0 0-2.76-4.23h-0.62a8 8 0 0 0-2.76 4.22c-0.52 1.89 2.07 10.61 2.76 12.53h0.62c0.64-1.76 3.19-10.82 2.76-12.52z" style="fill:#333;"/><path d="m102.81 152.24a2.4921 2.4921 0 1 1 1.19-4.84l0.21 0.06a37.1 37.1 0 0 0 5.43 1.12 44.52 44.52 0 0 0 11.76 0 37.1 37.1 0 0 0 5.43-1.12 2.4903 2.4903 0 0 1 1.59 4.72l-0.21 0.06a43.08 43.08 0 0 1-6.15 1.29 48.55 48.55 0 0 1-13.08 0 42.79 42.79 0 0 1-6.17-1.29z" style="fill:#333;"/>';
-	sP['11']['eyes'] = '<path d="m86.851 100.39a4.94 4.94 0 1 0 4.9297 5 5 5 0 0 0-4.9297-5zm57.221 0a4.94 4.94 0 1 0 4.9394 4.9394 4.94 4.94 0 0 0-4.9394-4.9394z" style="fill:#333;"/><path d="m86.207 89.365c-25.504 0-21.503 6.8561-21.035 19.596 0.80177 18.121 17.763 16.514 21.201 16.639 14.758-0.041 20.518-8.227 22.951-22.932 1.8166-10.731-9.251-13.174-23.117-13.303zm58.598 0c-13.866 0.1284-24.936 2.5717-23.119 13.303 2.4332 14.705 8.1936 22.891 22.951 22.932 3.4383-0.125 20.399 1.4828 21.201-16.639 0-18.965-0.47958-19.596-21.033-19.596z" style="fill:#4d4d4d;"/><path d="m169.87 90.255a0.51 0.51 0 0 0-0.43991-0.52 167.64 167.64 0 0 0-22.6-1.6801c-12 0-27.47 3.7601-30.17 3.7601h-2.4c-1.2499 0-5.29-0.80996-10.45-1.6801a124.35 124.35 0 0 0-19.72-2.08 166.18 166.18 0 0 0-19.31 1.24c-1.56 0.17999-2.69 0.35009-3.2899 0.44009a0.51 0.51 0 0 0-0.44007 0.52l-0.091 6.4501a0.57 0.57 0 0 0 0.33012 0.52l0.73994 0.23992c1.08 0.41992 1.0001 19.85 6.78 24.71 3.4401 2.8599 6.51 4.4899 19.42 4.4899 7.4699 0 12.17-1.9999 16.63-8 3.21-4.32 6.0999-14.55 6.0999-14.55 0.82006-4.07 3.7702-4.52 4.43-4.5801h0.12068c0.11078 0 3.66 0.0593 4.57 4.5801 0 0 2.8599 10.22 6.0699 14.54 4.4601 5.9999 9.1601 8 16.63 8 12.91 0 16-1.63 19.42-4.4901 5.7898-4.86 5.6998-24.29 6.78-24.71l0.73994-0.23993a0.57 0.57 0 0 0 0.32996-0.52l-0.12068-6.4501zm-65 23c-1.9101 4.5-6.8 10.29-13.7 10.64-20.7 0.99985-21.65-4.7401-23-9.3201a31.45 31.45 0 0 1-1.2099-13.18c0.53997-4.5799 1.7-7.2699 3.7801-8.6201a9.3 9.3 0 0 1 4.3499-1.51 85.07 85.07 0 0 1 11.4-0.52 59.23 59.23 0 0 1 9.2099 0.69999c7.37 1.2 12.35 3.7001 12.35 6.1601a46.12 46.12 0 0 1-3.23 15.64zm58 1.3201c-1.34 4.5799-2.29 10.36-23 9.3201-6.91-0.3501-11.81-6.1401-13.71-10.64a46.35 46.35 0 0 1-3.22-15.64c0-3.39 9.43-6.8599 21.56-6.8599 12.13 0 14 0.89996 15.75 1.9999 2.08 1.3502 3.2398 4 3.77 8.6201a31.23 31.23 0 0 1-1.1601 13.17z" style="fill:#333;"/>';
-	sP['11']['top'] = '<path d="m156.1 15.879c-0.38556 5.3015-1.7049 9.4762-3.6602 12.76-0.41226 23.773-9.2343 35.229-15.154 42.797l15.062-4.6641c-0.66253 2.8135-2.4628 7.156-0.34766 12.137 1.6334-2.3144 7.9395-5.807 13-3.3477-0.43442 3.5532-0.95271 7.094-1.4512 10.639l8.9648 0.85937c0.83453 3.8792 0.51719 9.3449-0.59961 11.736l5.5508 2.0098c0.20764 2.7646 0.10001 5.4906-0.74609 8.875 8.4545-1.7225 14.213-4.3896 19.641-13.188 2.8639-4.7524 4.9018-10.483 4.7305-17.242-4.1612 4.916-9.6484 7.2485-15.26 10.109 6.507-11.065 8.8648-22.768 8.1367-30.58-7.3456 10.251-11.649 13.06-19.918 16.9 1.2386-11.4 5.5249-18.582 12.461-27.27-11.392-1.3025-16.301 1.4749-24.891 6.4395 4.5466-14.036 2.2208-26.679-5.5195-38.971zm-117.76 28.682c9.3378 3.6366 19.581 9.0234 21.129 18.549-7.6182 0.0414-14.897-3.5072-20.242-7.1894-0.15967 8.2309 2.8451 12.252 6.7734 19.08-7.2127 1.6129-12.084 4.8315-17.471 9.4805 7.2948-0.15715 12.299-1.0502 16.891 4.2793-6.0512 5.0164-11.99 10.79-11.99 19.24 9.257-6.1688 12.495-5.9486 21.137-2.2012 1.2906-8.0996 2.3978-14.872 2.7869-16.435 2.4719-0.73247 3.5247-0.94807 5.9221-1.2938-2.1556-7.4281 1.0996-9.5176 2.4141-11.6l7.543 1.5059c-3.9093-6.1699 2.6565-12.483 7.1445-15.51-4.4474-7.2082-5.6649-11.558-7.377-16.797-11.198-8.2947-23.895-6.2742-34.66-1.1094z" style="fill:#f9f9f9;"/><path d="m101.9 7.6408c-10.047 6.2416-12.441 28.646-12.131 33.289-6.9249-5.8258-7.8992-13.75-7.7695-19.203-9.6235 6.0158-10.666 14.421-9 23.943 1.1061 5.1411 2.3972 10.461 7.377 16.797 2e-3 -1e-3 4e-3 -3e-3 6e-3 -4e-3 2.7742 2.8742 5.4644 5.5941 8.3477 8.3574 0.41187-6.971 0.45449-13.622 7.1856-15.824 3.9532 2.8169 7.4123 5.9388 11.084 9.1035l10.559-10.25c5.6447 3.961 5.4531 6.5652 6.5215 14.104 2.153-1.7546 8.719-9.0037 15.844-10.139 0.98706 4.1261-0.99388 10.308-2.6387 13.621 0 0 14.32-11.846 15.195-27.971 0.33968-6.2599 0.2237-11.146-0.041-14.826-3.2125 5.5652-8.7118 8.7799-13.789 10.15-4.2715-9.2486-2.4785-21.435-0.48047-29.309-12.21 3.0195-20.932 18.337-22.172 25.07-9.2678-7.397-13.605-16.146-14.098-26.91z" style="fill:#f9f9f9;"/>';
+  // 11_final
+  sP['11'] = [];
+  sP['11']['env'] = env;
+  sP['11']['clo'] = '<path d="m116 203.13c-0.12 0-0.25 0.12-0.49 0.12s-0.25-0.12-0.49-0.12zm-27.29-8c0.87-0.25 1.72-0.47 2.56-0.69a32.37 32.37 0 0 0 0.3 8.57 21.5 21.5 0 0 0 7 6.88c6.41-6 16.8-6.64 16.8-6.64s10.5 0.58 17 6.69a21.61 21.61 0 0 0 6.93-6.66 32.34 32.34 0 0 0 0.35-8.84l2.13 0.56a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.64 114.64 0 0 1 37.38-16.37z" style="fill:#e9e9e9;"/><path d="m126.15 206-3.92 7.83h-13.46l-3.92-7.83a36.59 36.59 0 0 1 10.65-2.7 35.66 35.66 0 0 1 10.65 2.7z" style="fill:#818181;"/><path d="m124.54 230.65-2.18-16.74h-13.47l-2.19 16.76c2.9 0.22 5.84 0.33 8.8 0.33s6.06-0.12 9-0.35z" style="fill:#989898;"/><path d="m134.84 186s0.86 9.8-19.34 17.26c0 0 15.79 0.86 20.57 11.76 0.12 0.49 9.3-23.26-1.23-29z" style="fill:#fff;"/><path d="m96.16 186c-10.41 5.76-1.35 29.39-1.1 29 4.65-10.78 20.56-11.76 20.56-11.76-20.32-7.45-19.46-17.24-19.46-17.24z" style="fill:#fff;"/>';
+  sP['11']['head'] = '';
+  sP['11']['mouth'] = '<path d="m118.57 165.14a8.66 8.66 0 0 0-2.76-4.23h-0.62a8 8 0 0 0-2.76 4.22c-0.52 1.89 2.07 10.61 2.76 12.53h0.62c0.64-1.76 3.19-10.82 2.76-12.52z" style="fill:#333;"/><path d="m102.81 152.24a2.4921 2.4921 0 1 1 1.19-4.84l0.21 0.06a37.1 37.1 0 0 0 5.43 1.12 44.52 44.52 0 0 0 11.76 0 37.1 37.1 0 0 0 5.43-1.12 2.4903 2.4903 0 0 1 1.59 4.72l-0.21 0.06a43.08 43.08 0 0 1-6.15 1.29 48.55 48.55 0 0 1-13.08 0 42.79 42.79 0 0 1-6.17-1.29z" style="fill:#333;"/>';
+  sP['11']['eyes'] = '<path d="m86.851 100.39a4.94 4.94 0 1 0 4.9297 5 5 5 0 0 0-4.9297-5zm57.221 0a4.94 4.94 0 1 0 4.9394 4.9394 4.94 4.94 0 0 0-4.9394-4.9394z" style="fill:#333;"/><path d="m86.207 89.365c-25.504 0-21.503 6.8561-21.035 19.596 0.80177 18.121 17.763 16.514 21.201 16.639 14.758-0.041 20.518-8.227 22.951-22.932 1.8166-10.731-9.251-13.174-23.117-13.303zm58.598 0c-13.866 0.1284-24.936 2.5717-23.119 13.303 2.4332 14.705 8.1936 22.891 22.951 22.932 3.4383-0.125 20.399 1.4828 21.201-16.639 0-18.965-0.47958-19.596-21.033-19.596z" style="fill:#4d4d4d;"/><path d="m169.87 90.255a0.51 0.51 0 0 0-0.43991-0.52 167.64 167.64 0 0 0-22.6-1.6801c-12 0-27.47 3.7601-30.17 3.7601h-2.4c-1.2499 0-5.29-0.80996-10.45-1.6801a124.35 124.35 0 0 0-19.72-2.08 166.18 166.18 0 0 0-19.31 1.24c-1.56 0.17999-2.69 0.35009-3.2899 0.44009a0.51 0.51 0 0 0-0.44007 0.52l-0.091 6.4501a0.57 0.57 0 0 0 0.33012 0.52l0.73994 0.23992c1.08 0.41992 1.0001 19.85 6.78 24.71 3.4401 2.8599 6.51 4.4899 19.42 4.4899 7.4699 0 12.17-1.9999 16.63-8 3.21-4.32 6.0999-14.55 6.0999-14.55 0.82006-4.07 3.7702-4.52 4.43-4.5801h0.12068c0.11078 0 3.66 0.0593 4.57 4.5801 0 0 2.8599 10.22 6.0699 14.54 4.4601 5.9999 9.1601 8 16.63 8 12.91 0 16-1.63 19.42-4.4901 5.7898-4.86 5.6998-24.29 6.78-24.71l0.73994-0.23993a0.57 0.57 0 0 0 0.32996-0.52l-0.12068-6.4501zm-65 23c-1.9101 4.5-6.8 10.29-13.7 10.64-20.7 0.99985-21.65-4.7401-23-9.3201a31.45 31.45 0 0 1-1.2099-13.18c0.53997-4.5799 1.7-7.2699 3.7801-8.6201a9.3 9.3 0 0 1 4.3499-1.51 85.07 85.07 0 0 1 11.4-0.52 59.23 59.23 0 0 1 9.2099 0.69999c7.37 1.2 12.35 3.7001 12.35 6.1601a46.12 46.12 0 0 1-3.23 15.64zm58 1.3201c-1.34 4.5799-2.29 10.36-23 9.3201-6.91-0.3501-11.81-6.1401-13.71-10.64a46.35 46.35 0 0 1-3.22-15.64c0-3.39 9.43-6.8599 21.56-6.8599 12.13 0 14 0.89996 15.75 1.9999 2.08 1.3502 3.2398 4 3.77 8.6201a31.23 31.23 0 0 1-1.1601 13.17z" style="fill:#333;"/>';
+  sP['11']['top'] = '<path d="m156.1 15.879c-0.38556 5.3015-1.7049 9.4762-3.6602 12.76-0.41226 23.773-9.2343 35.229-15.154 42.797l15.062-4.6641c-0.66253 2.8135-2.4628 7.156-0.34766 12.137 1.6334-2.3144 7.9395-5.807 13-3.3477-0.43442 3.5532-0.95271 7.094-1.4512 10.639l8.9648 0.85937c0.83453 3.8792 0.51719 9.3449-0.59961 11.736l5.5508 2.0098c0.20764 2.7646 0.10001 5.4906-0.74609 8.875 8.4545-1.7225 14.213-4.3896 19.641-13.188 2.8639-4.7524 4.9018-10.483 4.7305-17.242-4.1612 4.916-9.6484 7.2485-15.26 10.109 6.507-11.065 8.8648-22.768 8.1367-30.58-7.3456 10.251-11.649 13.06-19.918 16.9 1.2386-11.4 5.5249-18.582 12.461-27.27-11.392-1.3025-16.301 1.4749-24.891 6.4395 4.5466-14.036 2.2208-26.679-5.5195-38.971zm-117.76 28.682c9.3378 3.6366 19.581 9.0234 21.129 18.549-7.6182 0.0414-14.897-3.5072-20.242-7.1894-0.15967 8.2309 2.8451 12.252 6.7734 19.08-7.2127 1.6129-12.084 4.8315-17.471 9.4805 7.2948-0.15715 12.299-1.0502 16.891 4.2793-6.0512 5.0164-11.99 10.79-11.99 19.24 9.257-6.1688 12.495-5.9486 21.137-2.2012 1.2906-8.0996 2.3978-14.872 2.7869-16.435 2.4719-0.73247 3.5247-0.94807 5.9221-1.2938-2.1556-7.4281 1.0996-9.5176 2.4141-11.6l7.543 1.5059c-3.9093-6.1699 2.6565-12.483 7.1445-15.51-4.4474-7.2082-5.6649-11.558-7.377-16.797-11.198-8.2947-23.895-6.2742-34.66-1.1094z" style="fill:#f9f9f9;"/><path d="m101.9 7.6408c-10.047 6.2416-12.441 28.646-12.131 33.289-6.9249-5.8258-7.8992-13.75-7.7695-19.203-9.6235 6.0158-10.666 14.421-9 23.943 1.1061 5.1411 2.3972 10.461 7.377 16.797 2e-3 -1e-3 4e-3 -3e-3 6e-3 -4e-3 2.7742 2.8742 5.4644 5.5941 8.3477 8.3574 0.41187-6.971 0.45449-13.622 7.1856-15.824 3.9532 2.8169 7.4123 5.9388 11.084 9.1035l10.559-10.25c5.6447 3.961 5.4531 6.5652 6.5215 14.104 2.153-1.7546 8.719-9.0037 15.844-10.139 0.98706 4.1261-0.99388 10.308-2.6387 13.621 0 0 14.32-11.846 15.195-27.971 0.33968-6.2599 0.2237-11.146-0.041-14.826-3.2125 5.5652-8.7118 8.7799-13.789 10.15-4.2715-9.2486-2.4785-21.435-0.48047-29.309-12.21 3.0195-20.932 18.337-22.172 25.07-9.2678-7.397-13.605-16.146-14.098-26.91z" style="fill:#f9f9f9;"/>';
 
 
-  // Blond
-	sP['12'] = [];
-	sP['12']['env'] = env;
-	sP['12']['clo'] = '<path d="m141.75 195a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5l26.23 13 26.27-13z" style="fill:#131111;"/><polygon points="115.5 208.03 115.5 207.74 82.72 188.91 80.45 198.86 101.46 222.72" style="fill:#cbcbcb;"/><polygon points="115.5 208.03 115.5 207.74 148.28 188.91 150.55 198.86 129.54 222.72" style="fill:#cbcbcb;"/>';
-	sP['12']['head'] = head;
-	sP['12']['mouth'] = '<path d="m123.07 154.05a10.61 10.61 0 0 1-15 0.14l-0.14-0.14" style="fill:none;'+str+'6.3px;stroke:#000;"/><path d="m120.1 142.22 0.19-0.11c3-1.87 5.45-2.4 7.3-1.46 2.15 1.1 3.12 3.84 4.84 5.5a5.18 5.18 0 0 0 6.68 0.73m-28.21-4.66-0.19-0.11c-3-1.87-5.45-2.4-7.3-1.46-2.15 1.1-3.12 3.84-4.84 5.5a5.18 5.18 0 0 1-6.68 0.73" style="fill:none;'+str+'5.9998px;stroke:#4d4d4d;"/>';
-	sP['12']['eyes'] = '<path d="m161.73 86.016h-92.51c-3.37 0-6.0001 2.3998-6.0001 5.2999v28.45c0 3.0002 2.74 5.3001 6.0001 5.3001h32.36c7.0901 0 7.44-19.43 13.82-19.43s6.8801 19.44 13.83 19.44h32.36c3.37 0 5.9999-2.4 5.9999-5.3001v-28.46c0.14043-2.9001-2.6-5.2999-5.9-5.2999z" style="fill:#8f8f8f;"/><path d="m161.73 86.016h-92.51c-3.37 0-6.0001 2.3998-6.0001 5.2999v28.45l104.55-28.45c0-2.9001-2.74-5.2999-5.9999-5.2999z" style="fill:#e3e3e3;"/><path d="m161.73 86.016h-92.51c-3.37 0-6.0001 2.3998-6.0001 5.2999v28.45c0 3.0002 2.74 5.3001 6.0001 5.3001h32.36c7.0901 0 7.44-19.43 13.82-19.43s6.8801 19.44 13.83 19.44h32.36c3.37 0 5.9999-2.4 5.9999-5.3001v-28.46c0.14043-2.9001-2.6-5.2999-5.9-5.2999z" style="fill:none;'+str+'4.0026px;stroke:#232323;"/>';
-	sP['12']['top'] = '<path d="m69.834 33.826c-8.2001-0.0626-16.444 2.6753-23.152 7.7038-8.5298 6.9899-12.159 19.61-12.329 32.68-0.2041 15.476 1.6092 34.752 1.7464 51.915 0.10414 13.047 0.53485 25.984-2.9197 33.995-2.4994 5.81-9.0955 9.6006-16.196 12.311 7.9599 2.8301 25.009 2.8094 33.58 1.5393 10.8-1.59 17.238-6.5294 17.159-22.699-0.0911-15.93-1.3894-29.23-1.559-45.83-0.3208-11.983-1.569-24.291 4.9774-33.987 4.2139-6.1265 10.452-10.521 17.116-13.588 3.9292-1.8575 8.0384-3.3083 12.263-4.3297-6.8718-13.574-18.732-19.618-30.687-19.709z" style="fill:#b3b3b3;"/><path d="m90.8 76.246c11.918-17.125 31.996-23.218 49.743-17.488 11.81 3.9496 20.692 13.389 22.313 28.237 0.51051 6.2098 0.63413 12.445 0.37007 18.67-0.23973 11.2-0.72946 23.82-1.0995 34.08-0.82005 22.43 0.0593 35.1 24.589 36.3 8.5635 0.32122 17.137-0.22845 25.59-1.6405h-0.0198c-10.74-3.3799-17.98-15.609-19.3-26.289-1.29-10.41-0.6098-23.43-0.7898-38.091-0.1701-14.96 1.0398-29.819 0.28008-42.089-1.414-22.777-14.947-38.505-34.126-45.152-27.813-7.35-51.083 0.091-61.672 17.343-5.4698 8.9112-7.7413 20.07-5.8788 36.121z" style="fill:#b3b3b3;"/>';
+  // 12_final
+  sP['12'] = [];
+  sP['12']['env'] = env;
+  sP['12']['clo'] = '<path d="m141.75 195a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5l26.23 13 26.27-13z" style="fill:#131111;"/><polygon points="115.5 208.03 115.5 207.74 82.72 188.91 80.45 198.86 101.46 222.72" style="fill:#cbcbcb;"/><polygon points="115.5 208.03 115.5 207.74 148.28 188.91 150.55 198.86 129.54 222.72" style="fill:#cbcbcb;"/>';
+  sP['12']['head'] = '';
+  sP['12']['mouth'] = '<path d="m123.07 154.05a10.61 10.61 0 0 1-15 0.14l-0.14-0.14" style="fill:none;' + str + '6.3px;stroke:#000;"/><path d="m120.1 142.22 0.19-0.11c3-1.87 5.45-2.4 7.3-1.46 2.15 1.1 3.12 3.84 4.84 5.5a5.18 5.18 0 0 0 6.68 0.73m-28.21-4.66-0.19-0.11c-3-1.87-5.45-2.4-7.3-1.46-2.15 1.1-3.12 3.84-4.84 5.5a5.18 5.18 0 0 1-6.68 0.73" style="fill:none;' + str + '5.9998px;stroke:#4d4d4d;"/>';
+  sP['12']['eyes'] = '<path d="m161.73 86.016h-92.51c-3.37 0-6.0001 2.3998-6.0001 5.2999v28.45c0 3.0002 2.74 5.3001 6.0001 5.3001h32.36c7.0901 0 7.44-19.43 13.82-19.43s6.8801 19.44 13.83 19.44h32.36c3.37 0 5.9999-2.4 5.9999-5.3001v-28.46c0.14043-2.9001-2.6-5.2999-5.9-5.2999z" style="fill:#8f8f8f;"/><path d="m161.73 86.016h-92.51c-3.37 0-6.0001 2.3998-6.0001 5.2999v28.45l104.55-28.45c0-2.9001-2.74-5.2999-5.9999-5.2999z" style="fill:#e3e3e3;"/><path d="m161.73 86.016h-92.51c-3.37 0-6.0001 2.3998-6.0001 5.2999v28.45c0 3.0002 2.74 5.3001 6.0001 5.3001h32.36c7.0901 0 7.44-19.43 13.82-19.43s6.8801 19.44 13.83 19.44h32.36c3.37 0 5.9999-2.4 5.9999-5.3001v-28.46c0.14043-2.9001-2.6-5.2999-5.9-5.2999z" style="fill:none;' + str + '4.0026px;stroke:#232323;"/>';
+  sP['12']['top'] = '<path d="m69.834 33.826c-8.2001-0.0626-16.444 2.6753-23.152 7.7038-8.5298 6.9899-12.159 19.61-12.329 32.68-0.2041 15.476 1.6092 34.752 1.7464 51.915 0.10414 13.047 0.53485 25.984-2.9197 33.995-2.4994 5.81-9.0955 9.6006-16.196 12.311 7.9599 2.8301 25.009 2.8094 33.58 1.5393 10.8-1.59 17.238-6.5294 17.159-22.699-0.0911-15.93-1.3894-29.23-1.559-45.83-0.3208-11.983-1.569-24.291 4.9774-33.987 4.2139-6.1265 10.452-10.521 17.116-13.588 3.9292-1.8575 8.0384-3.3083 12.263-4.3297-6.8718-13.574-18.732-19.618-30.687-19.709z" style="fill:#b3b3b3;"/><path d="m90.8 76.246c11.918-17.125 31.996-23.218 49.743-17.488 11.81 3.9496 20.692 13.389 22.313 28.237 0.51051 6.2098 0.63413 12.445 0.37007 18.67-0.23973 11.2-0.72946 23.82-1.0995 34.08-0.82005 22.43 0.0593 35.1 24.589 36.3 8.5635 0.32122 17.137-0.22845 25.59-1.6405h-0.0198c-10.74-3.3799-17.98-15.609-19.3-26.289-1.29-10.41-0.6098-23.43-0.7898-38.091-0.1701-14.96 1.0398-29.819 0.28008-42.089-1.414-22.777-14.947-38.505-34.126-45.152-27.813-7.35-51.083 0.091-61.672 17.343-5.4698 8.9112-7.7413 20.07-5.8788 36.121z" style="fill:#b3b3b3;"/>';
 
 
-  // Ateam
-	sP['13'] = [];
-	sP['13']['env'] = env;
-	sP['13']['clo'] = '<path d="M61.11,205.59l3.49,3.69-6.26,6.6A115.45,115.45,0,0,0,72,222.51v-22a115.19,115.19,0,0,0-10.85,5.1Z" style="fill:#eee;"/><path d="M93.24,228.85V199l-4-4A114.43,114.43,0,0,0,72,200.49v22a114.43,114.43,0,0,0,21.28,6.34Z" style="fill:#787878;"/><path d="m159 222.51v-22a114.63 114.63 0 0 0-17.25-5.51l-4 4v29.86a114.16 114.16 0 0 0 21.25-6.35z" style="fill:#787878;"/><path d="m169.89 205.59-3.49 3.69 6.26 6.6a115.45 115.45 0 0 1-13.66 6.63v-22a115.19 115.19 0 0 1 10.85 5.1z" style="fill:#eee;"/><path d="M115.5,219.62A28.5,28.5,0,0,1,87.25,195c2.93-.74,5.92-1.36,8.94-1.87a19.41,19.41,0,0,0,38.62,0c3,.51,6,1.13,8.94,1.87a28.49,28.49,0,0,1-28.25,24.63Z" style="fill:#c9c9c9;"/>';
-	sP['13']['head'] = head;
-	sP['13']['mouth'] = '<path d="m115.5 153.93a14 14 0 0 1-10.5-4.69 3.4209 3.4209 0 0 1 5-4.67l0.08 0.08 0.08 0.09a7.35 7.35 0 0 0 10.39 0.37l0.37-0.37a3.4206 3.4206 0 1 1 5.23 4.41l-0.08 0.09a14 14 0 0 1-10.53 4.69z" /><path d="m115.27 127.32c-7.6627-0.03-15.251 1.4419-20.646 5.1465-7.62 5.33-9.9053 11.512-14.127 18.109-3.4379 5.2447-9.326 10.024-13.467 6.334 25.425 29.755 71.409 29.786 96.875 0.0664-6.8104 3.9305-11.545-2.47-13.508-6.4004-10.697-17.605-14.115-22.656-35.127-23.256zm-0.26758 8.3984c7.457 0.0802 14.986 1.2966 17.146 5.9522 2.5765 11.319-7.5878 17.454-16.681 17.515-6.09-0.05-12.2-2.3802-15.26-7.7402-6.36-11.16 3.6349-15.607 14.795-15.727z" style="fill:#404040;"/>';
-	sP['13']['eyes'] = '<path d="m91.72 97.36v11.4m47.56-11.4v11.4" style="fill:none;'+str+'7.9999px;stroke:#333;"/>';
-	sP['13']['top'] = '<path d="m52.107 57.293c-1.3411 14.839-3.8707 52.771 1.3145 72.715-0.67572-43.829 12.389-70.177 62.078-70.187 49.689 0.010061 62.754 26.359 62.078 70.187 5.1852-19.944 2.6556-57.876 1.3145-72.715h-63.393-63.393z" style="fill:#4d4d4d;"/><path d="m52.339 30.629c-1.3825 24.448-2.1216 45.905-1.4497 66.517 9.4643-48.304 112.77-54.916 129.22 0 0.67191-20.612-0.3798-47.256-1.4928-66.517-32.241 14.296-91.346 18.861-126.28 0z" style="fill:#4d4d4d;"/><path d="m115.5 24.92c-22.25 0-44.5 4.2296-56.72 12.69-3.32 2.3-5.0602 6.4392-5.5903 10.269-0.45275 3.23-0.84043 6.7561-1.1785 10.461h126.98c-0.33704-3.7047-0.72492-7.2306-1.1775-10.461-0.53009-3.8301-2.2697-7.9992-5.5897-10.269-12.22-8.4601-34.47-12.69-56.72-12.69z" style="fill:#4d4d4d;"/><path d="m76.521 39.139c21.233 3.3965 33.116-13.392 37.59-31.72 4.3614 17.158 14.175 34.968 36.577 31.584-33.921 20.594-57.646 11.594-74.167 0.1345z" style="fill:#4d4d4d;"/>';
+  // 13_final
+  sP['13'] = [];
+  sP['13']['env'] = env;
+  sP['13']['clo'] = '<path d="M61.11,205.59l3.49,3.69-6.26,6.6A115.45,115.45,0,0,0,72,222.51v-22a115.19,115.19,0,0,0-10.85,5.1Z" style="fill:#eee;"/><path d="M93.24,228.85V199l-4-4A114.43,114.43,0,0,0,72,200.49v22a114.43,114.43,0,0,0,21.28,6.34Z" style="fill:#787878;"/><path d="m159 222.51v-22a114.63 114.63 0 0 0-17.25-5.51l-4 4v29.86a114.16 114.16 0 0 0 21.25-6.35z" style="fill:#787878;"/><path d="m169.89 205.59-3.49 3.69 6.26 6.6a115.45 115.45 0 0 1-13.66 6.63v-22a115.19 115.19 0 0 1 10.85 5.1z" style="fill:#eee;"/><path d="M115.5,219.62A28.5,28.5,0,0,1,87.25,195c2.93-.74,5.92-1.36,8.94-1.87a19.41,19.41,0,0,0,38.62,0c3,.51,6,1.13,8.94,1.87a28.49,28.49,0,0,1-28.25,24.63Z" style="fill:#c9c9c9;"/>';
+  sP['13']['head'] = '';
+  sP['13']['mouth'] = '<path d="m115.5 153.93a14 14 0 0 1-10.5-4.69 3.4209 3.4209 0 0 1 5-4.67l0.08 0.08 0.08 0.09a7.35 7.35 0 0 0 10.39 0.37l0.37-0.37a3.4206 3.4206 0 1 1 5.23 4.41l-0.08 0.09a14 14 0 0 1-10.53 4.69z" /><path d="m115.27 127.32c-7.6627-0.03-15.251 1.4419-20.646 5.1465-7.62 5.33-9.9053 11.512-14.127 18.109-3.4379 5.2447-9.326 10.024-13.467 6.334 25.425 29.755 71.409 29.786 96.875 0.0664-6.8104 3.9305-11.545-2.47-13.508-6.4004-10.697-17.605-14.115-22.656-35.127-23.256zm-0.26758 8.3984c7.457 0.0802 14.986 1.2966 17.146 5.9522 2.5765 11.319-7.5878 17.454-16.681 17.515-6.09-0.05-12.2-2.3802-15.26-7.7402-6.36-11.16 3.6349-15.607 14.795-15.727z" style="fill:#404040;"/>';
+  sP['13']['eyes'] = '<path d="m91.72 97.36v11.4m47.56-11.4v11.4" style="fill:none;' + str + '7.9999px;stroke:#333;"/>';
+  sP['13']['top'] = '<path d="m52.107 57.293c-1.3411 14.839-3.8707 52.771 1.3145 72.715-0.67572-43.829 12.389-70.177 62.078-70.187 49.689 0.010061 62.754 26.359 62.078 70.187 5.1852-19.944 2.6556-57.876 1.3145-72.715h-63.393-63.393z" style="fill:#4d4d4d;"/><path d="m52.339 30.629c-1.3825 24.448-2.1216 45.905-1.4497 66.517 9.4643-48.304 112.77-54.916 129.22 0 0.67191-20.612-0.3798-47.256-1.4928-66.517-32.241 14.296-91.346 18.861-126.28 0z" style="fill:#4d4d4d;"/><path d="m115.5 24.92c-22.25 0-44.5 4.2296-56.72 12.69-3.32 2.3-5.0602 6.4392-5.5903 10.269-0.45275 3.23-0.84043 6.7561-1.1785 10.461h126.98c-0.33704-3.7047-0.72492-7.2306-1.1775-10.461-0.53009-3.8301-2.2697-7.9992-5.5897-10.269-12.22-8.4601-34.47-12.69-56.72-12.69z" style="fill:#4d4d4d;"/><path d="m76.521 39.139c21.233 3.3965 33.116-13.392 37.59-31.72 4.3614 17.158 14.175 34.968 36.577 31.584-33.921 20.594-57.646 11.594-74.167 0.1345z" style="fill:#4d4d4d;"/>';
 
 
-  // Rasta
-	sP['14'] = [];
-	sP['14']['env'] = env;
-	sP['14']['clo'] = '<path d="m91.92 194.41a101.47 101.47 0 0 1 23.58 17.09 101.47 101.47 0 0 1 23.58-17.09c0.89 0.19 1.78 0.38 2.67 0.59a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5c0.88-0.21 1.78-0.4 2.67-0.59z" style="fill:#757575;"/><path d="m73.65 199.82c16.59 8.23 28.72 18.91 34.27 30.93a114.86 114.86 0 0 1-56.65-19.25 115.06 115.06 0 0 1 22.38-11.68z" style="fill:#d8d8d8;"/><path d="m60.63 205.85c12.35 5.94 21.93 13.44 27.59 21.91a114.7 114.7 0 0 1-36.95-16.26q4.53-3 9.36-5.65z" style="fill:#757575;"/><path d="m157.35 199.82c-16.6 8.23-28.72 18.91-34.27 30.93a114.86 114.86 0 0 0 56.65-19.25 115.06 115.06 0 0 0-22.38-11.68z" style="fill:#d8d8d8;"/><path d="m170.37 205.85c-12.35 5.94-21.93 13.44-27.59 21.91a114.7 114.7 0 0 0 36.95-16.26q-4.53-3-9.36-5.65z" style="fill:#757575;"/>';
-	sP['14']['head'] = head;
-	sP['14']['mouth'] = '<path d="m115.5 131c-17.71 0.65-27 9.41-29.61 23.69-1 5.62-0.43 7.06 2.76 7.17 22.76 0.76 22.23 18.21 26.85 18.89 4.62-0.68 4.09-18.13 26.85-18.89 3.19-0.11 3.79-1.55 2.76-7.17-2.62-14.28-11.9-23-29.61-23.69zm0 29.31c-10 0-18-5-18-11.17s8.08-11.17 18-11.17 18 5 18 11.17-8.08 11.17-18 11.17z" style="fill:#333;"/><path d="m123.54 148.46a11.53 11.53 0 0 1-16.09 0" style="fill:none;'+str+'6.7998px;stroke:#000;"/>';
-	sP['14']['eyes'] = '<path d="m133 108.17h14.17m-63.26 0h14.09m-20.69-8.93a21.31 21.31 0 0 1 27.29 0m21.8 0a21.31 21.31 0 0 1 27.29 0" style="fill:none;'+str+'4.8243px;stroke:#000;"/>';
-	sP['14']['top'] = '<path d="m115.5 51.75c-38.702 5.3101-54.215 18.038-59.863 35.101" style="fill:none;'+str+'12;stroke:#333;"/><path d="m115.5 51.75c-7.8393 3.6337-5.5974 16.583-14.341 23.452" style="fill:none;'+str+'12;stroke:#333;"/><path d="m111.35 48.614c-22.634-6.9181-42.457-3.1988-55.733 2.5105" style="fill:none;'+str+'12;stroke:#333;"/><path d="m115.47 54.008c0.1965-6.7774-0.1436-26.309 0.05-38.184" style="fill:none;'+str+'12;stroke:#333;"/><path d="m68.874 28.177c34.115-3.382 41.987 13.321 45.17 19.602" style="fill:none;'+str+'12;stroke:#333;"/><path d="m116.49 48.69c2.8876-6.3019 10.358-21.518 43.469-22.326" style="fill:none;'+str+'12;stroke:#333;"/><path d="m116.92 51.766c1.5094 6.3991 3.4988 15.595 10.088 23.058" style="fill:none;'+str+'12;stroke:#333;"/><path d="m113.81 51.532c22.03-7.8674 46.709-7.3614 59.444-2.0465" style="fill:none;'+str+'12;stroke:#333;"/><path d="m114.53 52.278c36.226 4.8583 52.414 17.092 59.373 33.347" style="fill:none;'+str+'12;stroke:#333;"/><path d="m55.637 86.851c-4.1213 12.452-2.9877 27.213-1.777 43.084" style="fill:none;'+str+'12;stroke:#333;"/><path d="m55.614 51.124c-13.422 5.5019-21.908 16.409-24.712 28.774-1.8322 8.4632-1.9809 18.156-1.6096 28.486" style="fill:none;'+str+'12;stroke:#333;"/><path d="m173.26 49.486c24.917 10.399 26.707 36.537 27.209 59.62" style="fill:none;'+str+'12;stroke:#333;"/><path d="m173.9 85.625c5.4042 12.625 5.2413 27.675 4.5745 43.58" style="fill:none;'+str+'12;stroke:#333;"/><path d="m53.86 129.93c1.293 16.951 2.6738 35.169-2.1664 53.193" style="fill:none;'+str+'12;stroke:#333;"/><path d="m29.292 108.38c0.6173 17.177 2.6722 36.119 0.8158 54.108" style="fill:none;'+str+'12;stroke:#333;"/><path d="m200.47 109.11c0.3586 18.529-1.2751 36.94 1.9231 48.985" style="fill:none;'+str+'12;stroke:#333;"/><path d="m178.48 129.2c-0.7279 17.362-2.0563 35.743 2.6011 53.099" style="fill:none;'+str+'12;stroke:#333;"/>';
+  // 14_final
+  sP['14'] = [];
+  sP['14']['env'] = env;
+  sP['14']['clo'] = '<path d="m91.92 194.41a101.47 101.47 0 0 1 23.58 17.09 101.47 101.47 0 0 1 23.58-17.09c0.89 0.19 1.78 0.38 2.67 0.59a114.79 114.79 0 0 1 38 16.5 115.53 115.53 0 0 1-128.46 0 114.79 114.79 0 0 1 38-16.5c0.88-0.21 1.78-0.4 2.67-0.59z" style="fill:#757575;"/><path d="m73.65 199.82c16.59 8.23 28.72 18.91 34.27 30.93a114.86 114.86 0 0 1-56.65-19.25 115.06 115.06 0 0 1 22.38-11.68z" style="fill:#d8d8d8;"/><path d="m60.63 205.85c12.35 5.94 21.93 13.44 27.59 21.91a114.7 114.7 0 0 1-36.95-16.26q4.53-3 9.36-5.65z" style="fill:#757575;"/><path d="m157.35 199.82c-16.6 8.23-28.72 18.91-34.27 30.93a114.86 114.86 0 0 0 56.65-19.25 115.06 115.06 0 0 0-22.38-11.68z" style="fill:#d8d8d8;"/><path d="m170.37 205.85c-12.35 5.94-21.93 13.44-27.59 21.91a114.7 114.7 0 0 0 36.95-16.26q-4.53-3-9.36-5.65z" style="fill:#757575;"/>';
+  sP['14']['head'] = '';
+  sP['14']['mouth'] = '<path d="m115.5 131c-17.71 0.65-27 9.41-29.61 23.69-1 5.62-0.43 7.06 2.76 7.17 22.76 0.76 22.23 18.21 26.85 18.89 4.62-0.68 4.09-18.13 26.85-18.89 3.19-0.11 3.79-1.55 2.76-7.17-2.62-14.28-11.9-23-29.61-23.69zm0 29.31c-10 0-18-5-18-11.17s8.08-11.17 18-11.17 18 5 18 11.17-8.08 11.17-18 11.17z" style="fill:#333;"/><path d="m123.54 148.46a11.53 11.53 0 0 1-16.09 0" style="fill:none;' + str + '6.7998px;stroke:#000;"/>';
+  sP['14']['eyes'] = '<path d="m133 108.17h14.17m-63.26 0h14.09m-20.69-8.93a21.31 21.31 0 0 1 27.29 0m21.8 0a21.31 21.31 0 0 1 27.29 0" style="fill:none;' + str + '4.8243px;stroke:#000;"/>';
+  sP['14']['top'] = '<path d="m115.5 51.75c-38.702 5.3101-54.215 18.038-59.863 35.101" style="fill:none;' + str + '12;stroke:#333;"/><path d="m115.5 51.75c-7.8393 3.6337-5.5974 16.583-14.341 23.452" style="fill:none;' + str + '12;stroke:#333;"/><path d="m111.35 48.614c-22.634-6.9181-42.457-3.1988-55.733 2.5105" style="fill:none;' + str + '12;stroke:#333;"/><path d="m115.47 54.008c0.1965-6.7774-0.1436-26.309 0.05-38.184" style="fill:none;' + str + '12;stroke:#333;"/><path d="m68.874 28.177c34.115-3.382 41.987 13.321 45.17 19.602" style="fill:none;' + str + '12;stroke:#333;"/><path d="m116.49 48.69c2.8876-6.3019 10.358-21.518 43.469-22.326" style="fill:none;' + str + '12;stroke:#333;"/><path d="m116.92 51.766c1.5094 6.3991 3.4988 15.595 10.088 23.058" style="fill:none;' + str + '12;stroke:#333;"/><path d="m113.81 51.532c22.03-7.8674 46.709-7.3614 59.444-2.0465" style="fill:none;' + str + '12;stroke:#333;"/><path d="m114.53 52.278c36.226 4.8583 52.414 17.092 59.373 33.347" style="fill:none;' + str + '12;stroke:#333;"/><path d="m55.637 86.851c-4.1213 12.452-2.9877 27.213-1.777 43.084" style="fill:none;' + str + '12;stroke:#333;"/><path d="m55.614 51.124c-13.422 5.5019-21.908 16.409-24.712 28.774-1.8322 8.4632-1.9809 18.156-1.6096 28.486" style="fill:none;' + str + '12;stroke:#333;"/><path d="m173.26 49.486c24.917 10.399 26.707 36.537 27.209 59.62" style="fill:none;' + str + '12;stroke:#333;"/><path d="m173.9 85.625c5.4042 12.625 5.2413 27.675 4.5745 43.58" style="fill:none;' + str + '12;stroke:#333;"/><path d="m53.86 129.93c1.293 16.951 2.6738 35.169-2.1664 53.193" style="fill:none;' + str + '12;stroke:#333;"/><path d="m29.292 108.38c0.6173 17.177 2.6722 36.119 0.8158 54.108" style="fill:none;' + str + '12;stroke:#333;"/><path d="m200.47 109.11c0.3586 18.529-1.2751 36.94 1.9231 48.985" style="fill:none;' + str + '12;stroke:#333;"/><path d="m178.48 129.2c-0.7279 17.362-2.0563 35.743 2.6011 53.099" style="fill:none;' + str + '12;stroke:#333;"/>';
 
 
-  // Meta
-	sP['15'] = [];
-	sP['15']['env'] = env;
-	sP['15']['clo'] = '';
-	sP['15']['head'] = head;
-	sP['15']['mouth'] = '';
-	sP['15']['eyes'] = '';
-	sP['15']['top'] = '';
+  // 15_final
+  sP['15'] = [];
+  sP['15']['env'] = env;
+  sP['15']['clo'] = '';
+  sP['15']['head'] = '';
+  sP['15']['mouth'] = '';
+  sP['15']['eyes'] = '';
+  sP['15']['top'] = '';
 
 
   // PHP_inject_end
@@ -677,22 +643,52 @@ function multiavatar (string, sansEnv, ver) {
   (c) 2009-2013 by Jeff Mott. All rights reserved.
   code.google.com/p/crypto-js/wiki/License
   */
-  var CryptoJS=CryptoJS||function(h,s){var f={},t=f.lib={},g=function(){},j=t.Base={extend:function(a){g.prototype=this;var c=new g;a&&c.mixIn(a);c.hasOwnProperty("init")||(c.init=function(){c.$super.init.apply(this,arguments)});c.init.prototype=c;c.$super=this;return c},create:function(){var a=this.extend();a.init.apply(a,arguments);return a},init:function(){},mixIn:function(a){for(var c in a)a.hasOwnProperty(c)&&(this[c]=a[c]);a.hasOwnProperty("toString")&&(this.toString=a.toString)},clone:function(){return this.init.prototype.extend(this)}},
-  q=t.WordArray=j.extend({init:function(a,c){a=this.words=a||[];this.sigBytes=c!=s?c:4*a.length},toString:function(a){return(a||u).stringify(this)},concat:function(a){var c=this.words,d=a.words,b=this.sigBytes;a=a.sigBytes;this.clamp();if(b%4)for(var e=0;e<a;e++)c[b+e>>>2]|=(d[e>>>2]>>>24-8*(e%4)&255)<<24-8*((b+e)%4);else if(65535<d.length)for(e=0;e<a;e+=4)c[b+e>>>2]=d[e>>>2];else c.push.apply(c,d);this.sigBytes+=a;return this},clamp:function(){var a=this.words,c=this.sigBytes;a[c>>>2]&=4294967295<<
-  32-8*(c%4);a.length=h.ceil(c/4)},clone:function(){var a=j.clone.call(this);a.words=this.words.slice(0);return a},random:function(a){for(var c=[],d=0;d<a;d+=4)c.push(4294967296*h.random()|0);return new q.init(c,a)}}),v=f.enc={},u=v.Hex={stringify:function(a){var c=a.words;a=a.sigBytes;for(var d=[],b=0;b<a;b++){var e=c[b>>>2]>>>24-8*(b%4)&255;d.push((e>>>4).toString(16));d.push((e&15).toString(16))}return d.join("")},parse:function(a){for(var c=a.length,d=[],b=0;b<c;b+=2)d[b>>>3]|=parseInt(a.substr(b,
-  2),16)<<24-4*(b%8);return new q.init(d,c/2)}},k=v.Latin1={stringify:function(a){var c=a.words;a=a.sigBytes;for(var d=[],b=0;b<a;b++)d.push(String.fromCharCode(c[b>>>2]>>>24-8*(b%4)&255));return d.join("")},parse:function(a){for(var c=a.length,d=[],b=0;b<c;b++)d[b>>>2]|=(a.charCodeAt(b)&255)<<24-8*(b%4);return new q.init(d,c)}},l=v.Utf8={stringify:function(a){try{return decodeURIComponent(escape(k.stringify(a)))}catch(c){throw Error("Malformed UTF-8 data");}},parse:function(a){return k.parse(unescape(encodeURIComponent(a)))}},
-  x=t.BufferedBlockAlgorithm=j.extend({reset:function(){this._data=new q.init;this._nDataBytes=0},_append:function(a){"string"==typeof a&&(a=l.parse(a));this._data.concat(a);this._nDataBytes+=a.sigBytes},_process:function(a){var c=this._data,d=c.words,b=c.sigBytes,e=this.blockSize,f=b/(4*e),f=a?h.ceil(f):h.max((f|0)-this._minBufferSize,0);a=f*e;b=h.min(4*a,b);if(a){for(var m=0;m<a;m+=e)this._doProcessBlock(d,m);m=d.splice(0,a);c.sigBytes-=b}return new q.init(m,b)},clone:function(){var a=j.clone.call(this);
-  a._data=this._data.clone();return a},_minBufferSize:0});t.Hasher=x.extend({cfg:j.extend(),init:function(a){this.cfg=this.cfg.extend(a);this.reset()},reset:function(){x.reset.call(this);this._doReset()},update:function(a){this._append(a);this._process();return this},finalize:function(a){a&&this._append(a);return this._doFinalize()},blockSize:16,_createHelper:function(a){return function(c,d){return(new a.init(d)).finalize(c)}},_createHmacHelper:function(a){return function(c,d){return(new w.HMAC.init(a,
-  d)).finalize(c)}}});var w=f.algo={};return f}(Math);
-  (function(h){for(var s=CryptoJS,f=s.lib,t=f.WordArray,g=f.Hasher,f=s.algo,j=[],q=[],v=function(a){return 4294967296*(a-(a|0))|0},u=2,k=0;64>k;){var l;a:{l=u;for(var x=h.sqrt(l),w=2;w<=x;w++)if(!(l%w)){l=!1;break a}l=!0}l&&(8>k&&(j[k]=v(h.pow(u,0.5))),q[k]=v(h.pow(u,1/3)),k++);u++}var a=[],f=f.SHA256=g.extend({_doReset:function(){this._hash=new t.init(j.slice(0))},_doProcessBlock:function(c,d){for(var b=this._hash.words,e=b[0],f=b[1],m=b[2],h=b[3],p=b[4],j=b[5],k=b[6],l=b[7],n=0;64>n;n++){if(16>n)a[n]=
-  c[d+n]|0;else{var r=a[n-15],g=a[n-2];a[n]=((r<<25|r>>>7)^(r<<14|r>>>18)^r>>>3)+a[n-7]+((g<<15|g>>>17)^(g<<13|g>>>19)^g>>>10)+a[n-16]}r=l+((p<<26|p>>>6)^(p<<21|p>>>11)^(p<<7|p>>>25))+(p&j^~p&k)+q[n]+a[n];g=((e<<30|e>>>2)^(e<<19|e>>>13)^(e<<10|e>>>22))+(e&f^e&m^f&m);l=k;k=j;j=p;p=h+r|0;h=m;m=f;f=e;e=r+g|0}b[0]=b[0]+e|0;b[1]=b[1]+f|0;b[2]=b[2]+m|0;b[3]=b[3]+h|0;b[4]=b[4]+p|0;b[5]=b[5]+j|0;b[6]=b[6]+k|0;b[7]=b[7]+l|0},_doFinalize:function(){var a=this._data,d=a.words,b=8*this._nDataBytes,e=8*a.sigBytes;
-  d[e>>>5]|=128<<24-e%32;d[(e+64>>>9<<4)+14]=h.floor(b/4294967296);d[(e+64>>>9<<4)+15]=b;a.sigBytes=4*d.length;this._process();return this._hash},clone:function(){var a=g.clone.call(this);a._hash=this._hash.clone();return a}});s.SHA256=g._createHelper(f);s.HmacSHA256=g._createHmacHelper(f)})(Math);
+  var CryptoJS = CryptoJS || function (h, s) {
+    var f = {}, t = f.lib = {}, g = function () { }, j = t.Base = { extend: function (a) { g.prototype = this; var c = new g; a && c.mixIn(a); c.hasOwnProperty("init") || (c.init = function () { c.$super.init.apply(this, arguments) }); c.init.prototype = c; c.$super = this; return c }, create: function () { var a = this.extend(); a.init.apply(a, arguments); return a }, init: function () { }, mixIn: function (a) { for (var c in a) a.hasOwnProperty(c) && (this[c] = a[c]); a.hasOwnProperty("toString") && (this.toString = a.toString) }, clone: function () { return this.init.prototype.extend(this) } },
+      q = t.WordArray = j.extend({
+        init: function (a, c) { a = this.words = a || []; this.sigBytes = c != s ? c : 4 * a.length }, toString: function (a) { return (a || u).stringify(this) }, concat: function (a) { var c = this.words, d = a.words, b = this.sigBytes; a = a.sigBytes; this.clamp(); if (b % 4) for (var e = 0; e < a; e++)c[b + e >>> 2] |= (d[e >>> 2] >>> 24 - 8 * (e % 4) & 255) << 24 - 8 * ((b + e) % 4); else if (65535 < d.length) for (e = 0; e < a; e += 4)c[b + e >>> 2] = d[e >>> 2]; else c.push.apply(c, d); this.sigBytes += a; return this }, clamp: function () {
+          var a = this.words, c = this.sigBytes; a[c >>> 2] &= 4294967295 <<
+            32 - 8 * (c % 4); a.length = h.ceil(c / 4)
+        }, clone: function () { var a = j.clone.call(this); a.words = this.words.slice(0); return a }, random: function (a) { for (var c = [], d = 0; d < a; d += 4)c.push(4294967296 * h.random() | 0); return new q.init(c, a) }
+      }), v = f.enc = {}, u = v.Hex = {
+        stringify: function (a) { var c = a.words; a = a.sigBytes; for (var d = [], b = 0; b < a; b++) { var e = c[b >>> 2] >>> 24 - 8 * (b % 4) & 255; d.push((e >>> 4).toString(16)); d.push((e & 15).toString(16)) } return d.join("") }, parse: function (a) {
+          for (var c = a.length, d = [], b = 0; b < c; b += 2)d[b >>> 3] |= parseInt(a.substr(b,
+            2), 16) << 24 - 4 * (b % 8); return new q.init(d, c / 2)
+        }
+      }, k = v.Latin1 = { stringify: function (a) { var c = a.words; a = a.sigBytes; for (var d = [], b = 0; b < a; b++)d.push(String.fromCharCode(c[b >>> 2] >>> 24 - 8 * (b % 4) & 255)); return d.join("") }, parse: function (a) { for (var c = a.length, d = [], b = 0; b < c; b++)d[b >>> 2] |= (a.charCodeAt(b) & 255) << 24 - 8 * (b % 4); return new q.init(d, c) } }, l = v.Utf8 = { stringify: function (a) { try { return decodeURIComponent(escape(k.stringify(a))) } catch (c) { throw Error("Malformed UTF-8 data"); } }, parse: function (a) { return k.parse(unescape(encodeURIComponent(a))) } },
+      x = t.BufferedBlockAlgorithm = j.extend({
+        reset: function () { this._data = new q.init; this._nDataBytes = 0 }, _append: function (a) { "string" == typeof a && (a = l.parse(a)); this._data.concat(a); this._nDataBytes += a.sigBytes }, _process: function (a) { var c = this._data, d = c.words, b = c.sigBytes, e = this.blockSize, f = b / (4 * e), f = a ? h.ceil(f) : h.max((f | 0) - this._minBufferSize, 0); a = f * e; b = h.min(4 * a, b); if (a) { for (var m = 0; m < a; m += e)this._doProcessBlock(d, m); m = d.splice(0, a); c.sigBytes -= b } return new q.init(m, b) }, clone: function () {
+          var a = j.clone.call(this);
+          a._data = this._data.clone(); return a
+        }, _minBufferSize: 0
+      }); t.Hasher = x.extend({
+        cfg: j.extend(), init: function (a) { this.cfg = this.cfg.extend(a); this.reset() }, reset: function () { x.reset.call(this); this._doReset() }, update: function (a) { this._append(a); this._process(); return this }, finalize: function (a) { a && this._append(a); return this._doFinalize() }, blockSize: 16, _createHelper: function (a) { return function (c, d) { return (new a.init(d)).finalize(c) } }, _createHmacHelper: function (a) {
+          return function (c, d) {
+            return (new w.HMAC.init(a,
+              d)).finalize(c)
+          }
+        }
+      }); var w = f.algo = {}; return f
+  }(Math);
+  (function (h) {
+    for (var s = CryptoJS, f = s.lib, t = f.WordArray, g = f.Hasher, f = s.algo, j = [], q = [], v = function (a) { return 4294967296 * (a - (a | 0)) | 0 }, u = 2, k = 0; 64 > k;) { var l; a: { l = u; for (var x = h.sqrt(l), w = 2; w <= x; w++)if (!(l % w)) { l = !1; break a } l = !0 } l && (8 > k && (j[k] = v(h.pow(u, 0.5))), q[k] = v(h.pow(u, 1 / 3)), k++); u++ } var a = [], f = f.SHA256 = g.extend({
+      _doReset: function () { this._hash = new t.init(j.slice(0)) }, _doProcessBlock: function (c, d) {
+        for (var b = this._hash.words, e = b[0], f = b[1], m = b[2], h = b[3], p = b[4], j = b[5], k = b[6], l = b[7], n = 0; 64 > n; n++) {
+          if (16 > n) a[n] =
+            c[d + n] | 0; else { var r = a[n - 15], g = a[n - 2]; a[n] = ((r << 25 | r >>> 7) ^ (r << 14 | r >>> 18) ^ r >>> 3) + a[n - 7] + ((g << 15 | g >>> 17) ^ (g << 13 | g >>> 19) ^ g >>> 10) + a[n - 16] } r = l + ((p << 26 | p >>> 6) ^ (p << 21 | p >>> 11) ^ (p << 7 | p >>> 25)) + (p & j ^ ~p & k) + q[n] + a[n]; g = ((e << 30 | e >>> 2) ^ (e << 19 | e >>> 13) ^ (e << 10 | e >>> 22)) + (e & f ^ e & m ^ f & m); l = k; k = j; j = p; p = h + r | 0; h = m; m = f; f = e; e = r + g | 0
+        } b[0] = b[0] + e | 0; b[1] = b[1] + f | 0; b[2] = b[2] + m | 0; b[3] = b[3] + h | 0; b[4] = b[4] + p | 0; b[5] = b[5] + j | 0; b[6] = b[6] + k | 0; b[7] = b[7] + l | 0
+      }, _doFinalize: function () {
+        var a = this._data, d = a.words, b = 8 * this._nDataBytes, e = 8 * a.sigBytes;
+        d[e >>> 5] |= 128 << 24 - e % 32; d[(e + 64 >>> 9 << 4) + 14] = h.floor(b / 4294967296); d[(e + 64 >>> 9 << 4) + 15] = b; a.sigBytes = 4 * d.length; this._process(); return this._hash
+      }, clone: function () { var a = g.clone.call(this); a._hash = this._hash.clone(); return a }
+    }); s.SHA256 = g._createHelper(f); s.HmacSHA256 = g._createHmacHelper(f)
+  })(Math);
 
   var hash = '';
   if (string.length == 0) return hash;
 
   var sha256Hash = CryptoJS.SHA256(string);
-  var sha256Numbers = sha256Hash.toString().replace(/\D/g,'');
+  var sha256Numbers = sha256Hash.toString().replace(/\D/g, '');
 
   hash = sha256Numbers.substring(0, 12);
 
@@ -702,37 +698,37 @@ function multiavatar (string, sansEnv, ver) {
 
   // Get parts (range 0-47)
   p['env'] = hash[0] + '' + hash[1];
-  p['env'] = Math.round((47/100)*p['env']) + '';
+  p['env'] = Math.round((47 / 100) * p['env']) + '';
 
   // Freeze a single part
   // e.g. '0' = 01A; '16' = 01B; '32' = 01C; '1' = 02A; '17' = 02B;
   // p['env'] = '16';
 
   p['clo'] = hash[2] + '' + hash[3];
-  p['clo'] = Math.round((47/100)*p['clo']) + '';
+  p['clo'] = Math.round((47 / 100) * p['clo']) + '';
 
   // p['clo'] = '16';
 
   p['head'] = hash[4] + '' + hash[5];
-  p['head'] = Math.round((47/100)*p['head']) + '';
+  p['head'] = Math.round((47 / 100) * p['head']) + '';
 
   // p['head'] = '01';
 
   p['mouth'] = hash[6] + '' + hash[7];
-  p['mouth'] = Math.round((47/100)*p['mouth']) + '';
+  p['mouth'] = Math.round((47 / 100) * p['mouth']) + '';
 
   // p['mouth'] = '16';
 
   p['eyes'] = hash[8] + '' + hash[9];
-  p['eyes'] = Math.round((47/100)*p['eyes']) + '';
+  p['eyes'] = Math.round((47 / 100) * p['eyes']) + '';
 
   // p['eyes'] = '16';
 
   p['top'] = hash[10] + '' + hash[11];
-  p['top'] = Math.round((47/100)*p['top']) + '';
-  
+  p['top'] = Math.round((47 / 100) * p['top']) + '';
+
   // p['top'] = '25';
-  
+
 
   // Get parts (range 0-15) + define themes
   for (var part in p) {
@@ -743,12 +739,12 @@ function multiavatar (string, sansEnv, ver) {
       if (nr.length == 1) nr = '0' + nr;
       p[part] = nr + 'C';
     }
-    else if (nr > 15) { 
+    else if (nr > 15) {
       nr = nr - 16 + '';
       if (nr.length == 1) nr = '0' + nr;
       p[part] = nr + 'B';
     } else {
-      if ((nr+'').length == 1) p[part] = '0' + nr + 'A';
+      if ((nr + '').length == 1) p[part] = '0' + nr + 'A';
       else p[part] = nr + 'A';
     }
   }
@@ -758,11 +754,11 @@ function multiavatar (string, sansEnv, ver) {
   var final = [];
 
   for (var part in p) {
-    var partV = p[part].substring(0,2);
-    var theme = p[part].substring(2,3);
+    var partV = p[part].substring(0, 2);
+    var theme = p[part].substring(2, 3);
     // console.log(part, partV, theme);
 
-    if (typeof(ver) != 'undefined') {
+    if (typeof (ver) != 'undefined') {
       partV = ver.part;
       theme = ver.theme;
     }
@@ -788,7 +784,7 @@ function multiavatar (string, sansEnv, ver) {
     if (result != null) {
       for (var i = 0; i < result.length; i++) {
         // console.log('replace', result[i], colors[i])
-        resultFinal = resultFinal.replace(result[i], colors[i]+';');
+        resultFinal = resultFinal.replace(result[i], colors[i] + ';');
       }
     }
 
@@ -799,8 +795,8 @@ function multiavatar (string, sansEnv, ver) {
   // Without 'env'
   if (sansEnv) {
     final['env'] = '';
-  } 
-  
-  return(svgStart + final['env'] + final['head'] + final['clo'] + final['top']+ final['eyes'] + final['mouth'] + svgEnd);
-  
+  }
+
+  return (svgStart + final['env'] + final['head'] + final['clo'] + final['top'] + final['eyes'] + final['mouth'] + svgEnd);
+
 }

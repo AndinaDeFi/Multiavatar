@@ -5,22 +5,22 @@
 
 
     $all = array(
-        "Robo" => "./00_final.svg", 
-        "Girl" => "./01_final.svg", 
-        "Blonde" => "./02_final.svg",
-        "Guy" => "./03_final.svg",
-        "Country" => "./04_final.svg",
-        "Geeknot" => "./05_final.svg",
-        "Asian" => "./06_final.svg",
-        "Punk" => "./07_final.svg",
-        "Afrohair" => "./08_final.svg",
-        "Normie Female" => "./09_final.svg",
-        "Older" => "./10_final.svg",
-        "Firehair" => "./11_final.svg",
-        "Blond" => "./12_final.svg",
-        "Ateam" => "./13_final.svg",
-        "Rasta" => "./14_final.svg",
-        "Meta" => "./15_final.svg"
+        "00_final" => "./00_final.svg", 
+        "01_final" => "./01_final.svg", 
+        "02_final" => "./02_final.svg",
+        "03_final" => "./03_final.svg",
+        "04_final" => "./04_final.svg",
+        "05_final" => "./05_final.svg",
+        "06_final" => "./06_final.svg",
+        "07_final" => "./07_final.svg",
+        "08_final" => "./08_final.svg",
+        "09_final" => "./09_final.svg",
+        "10_final" => "./10_final.svg",
+        "11_final" => "./11_final.svg",
+        "12_final" => "./12_final.svg",
+        "13_final" => "./13_final.svg",
+        "14_final" => "./14_final.svg",
+        "15_final" => "./15_final.svg"
     );
 
     $final_string = "";
@@ -92,7 +92,17 @@
         
 
         $final_string .= "';
-	sP['".$id."']['head'] = head;
+	sP['".$id."']['head'] = '";
+
+        $string = 'class="head"';
+        
+        $matches = strposX($data, $string);
+        $resp = matchesX($data, $string, $matches);
+        // var_dump($resp);
+        $final_string .= $resp;
+        
+        
+        $final_string .= "';
 	sP['".$id."']['mouth'] = '";
 
         $string = 'class="mouth"';
