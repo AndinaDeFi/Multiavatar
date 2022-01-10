@@ -72,7 +72,7 @@ function multiavatar(string, sansEnv, ver) {
         "env": ["none"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
-        "mouth": ["white"],
+        "mouth": ["red"],
         "eyes": ["red", "white", "white", "white", "white", "white", "white", "white", "white"],
         "top": ["#e5ca69", "pink"]
       },
@@ -80,7 +80,7 @@ function multiavatar(string, sansEnv, ver) {
         "env": ["none"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
-        "mouth": ["white"],
+        "mouth": ["red"],
         "eyes": ["green", "white", "white", "white", "white", "white", "white", "white", "white"],
         "top": ["#e5ca69", "pink"]
       },
@@ -88,7 +88,7 @@ function multiavatar(string, sansEnv, ver) {
         "env": ["none"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
-        "mouth": ["white"],
+        "mouth": ["red"],
         "eyes": ["blue", "white", "white", "white", "white", "white", "white", "white", "white"],
         "top": ["#e5ca69", "pink"]
       }
@@ -126,27 +126,27 @@ function multiavatar(string, sansEnv, ver) {
     "04": {
       "A": {
         "env": ["none"],
-        "clo": ["none", "none", "none", "none"],
+        "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
-        "mouth": ["white"],
-        "eyes": ["none"],
-        "top": ["none", "none", "none", "none"]
+        "mouth": ["red", "orange"],
+        "eyes": ["black", "black", "black", "white", "black", "white"],
+        "top": ["black"]
       },
       "B": {
         "env": ["none"],
-        "clo": ["none", "none", "none", "none"],
+        "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
-        "mouth": ["white"],
-        "eyes": ["none"],
-        "top": ["none", "none", "none", "none"]
+        "mouth": ["red", "orange"],
+        "eyes": ["black", "black", "black", "white", "black", "white"],
+        "top": ["black"]
       },
       "C": {
         "env": ["none"],
-        "clo": ["none", "none", "none", "none"],
+        "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
-        "mouth": ["white"],
-        "eyes": ["none"],
-        "top": ["none", "none", "none", "none"]
+        "mouth": ["red", "orange"],
+        "eyes": ["black", "black", "black", "white", "black", "white"],
+        "top": ["black"]
       }
     },
 
@@ -509,7 +509,7 @@ function multiavatar(string, sansEnv, ver) {
   sP['03']['env'] = env;
   sP['03']['clo'] = '<path d="M142.73 181.39a27.45 27.45 0 0 0-5.93-13.59c-1 .47-2 .9-3 1.29v14.65a18.35 18.35 0 1 1-36.7 0v-14.53c-1.07-.39-2.11-.82-3.13-1.29a27.4 27.4 0 0 0-5.84 13.47 26.87 26.87 0 0 0-.27 3.83 27.59 27.59 0 0 0 55.18 0 28.42 28.42 0 0 0-.31-3.83Z" id="path10" style="fill:#fff;fill-opacity:1"/><path d="M142.73 181.39a28.42 28.42 0 0 1 .27 3.83 27.59 27.59 0 0 1-55.18 0 26.87 26.87 0 0 1 .27-3.83 72.56 72.56 0 0 0-35.42 31 115.55 115.55 0 0 0 125.52.08 72.49 72.49 0 0 0-35.46-31.08Z" id="path8" style="fill:#c6c6c6;fill-opacity:1"/>';
   sP['03']['head'] = '<path d="M164.44 96.62V73.87q0-2.13-.18-4.23c-2-24.86-21.79-44.39-45.86-44.39h-5.88c-24.07 0-43.83 19.51-45.86 44.39q-.18 2.1-.18 4.23v22.75a12.74 12.74 0 0 0-11.29 12.67v.85a12.77 12.77 0 0 0 11.29 12.68v.52c0 21.19 12.86 39.22 30.79 45.87v14.53a18.41 18.41 0 0 0 18.36 18.35A18.41 18.41 0 0 0 134 183.74v-14.65c17.75-6.74 30.46-24.67 30.46-45.75v-.52a12.77 12.77 0 0 0 11.29-12.68v-.85a12.74 12.74 0 0 0-11.31-12.67Z" id="path12" style="fill:#e5e5e5;fill-opacity:1"/>';
-  sP['03']['mouth'] = '<path d="M98.37 134.43c0 6.4 2.26 13.84 14.17 13.84h5c11.91 0 14.14-7.44 14.17-13.84Z" id="path16" style="fill:#fff;fill-opacity:1"/><path d="m133.18 131.78-11.43-5a6 6 0 0 0-6.84 1.45 6 6 0 0 0-6.84-1.45l-11.44 5a6 6 0 0 0-3.09 7.92l.3.67a6 6 0 0 0 7.91 3.1l11.43-5a5.75 5.75 0 0 0 1.73-1.15 5.75 5.75 0 0 0 1.73 1.15l11.43 5a6 6 0 0 0 7.91-3.1l.3-.67a6 6 0 0 0-3.1-7.92Z" id="path30" style="fill:#1a1a1a;fill-opacity:1"/>';
+  sP['03']['mouth'] = '<path d="M98.37 134.43c0 6.4 2.26 13.84 14.17 13.84h5c11.91 0 14.14-7.44 14.17-13.84Z" id="path16" style="fill:#fff;fill-opacity:1"/><path d="m133.18 131.78-11.43-5a6 6 0 0 0-6.84 1.45 6 6 0 0 0-6.84-1.45l-11.44 5a6 6 0 0 0-3.09 7.92l.3.67a6 6 0 0 0 7.91 3.1l11.43-5a5.75 5.75 0 0 0 1.73-1.15 5.75 5.75 0 0 0 1.73 1.15l11.43 5a6 6 0 0 0 7.91-3.1l.3-.67a6 6 0 0 0-3.1-7.92z" id="path30" style="fill:#1a1a1a;fill-opacity:1"/>';
   sP['03']['eyes'] = '<rect x="77.55" y="81.87" width="32.5" height="12.75" rx="6.01" id="rect22" style="fill:#1a1a1a;fill-opacity:1"/><rect x="122.05" y="81.87" width="30.5" height="12.75" rx="6.01" id="rect28" style="fill:#1a1a1a;fill-opacity:1"/><rect x="87.42" y="98.32" width="12.75" height="24.5" rx="6.01" id="rect18" style="fill:#1a1a1a;fill-opacity:1"/><rect x="94.68" y="102.02" width="3.58" height="10.64" rx="1.79" id="rect20" style="fill:#fff;fill-opacity:1"/><rect x="130.92" y="98.32" width="12.75" height="24.5" rx="6.01" id="rect24" style="fill:#1a1a1a;fill-opacity:1"/><rect x="138.18" y="102.02" width="3.58" height="10.64" rx="1.79" id="rect26" style="fill:#fff;fill-opacity:1"/>';
   sP['03']['top'] = '<path d="M185.67 70.52a25.35 25.35 0 0 0-.28-3.82c-1.14-17.25-7.46-28.12-17.51-38.06-11.45-11.32-35.23-17.36-52.61-17.36s-23.49 2.25-39.56 18.33c-10 10-15.78 13.14-19.15 15.61a26.26 26.26 0 0 0-6.69 46.52A26.25 26.25 0 0 0 67.81 135a51.22 51.22 0 0 1-1.33-11.64v-.52a12.77 12.77 0 0 1-11.29-12.68v-.85a12.74 12.74 0 0 1 11.29-12.69v-24.1h97.9v24.1a12.74 12.74 0 0 1 11.29 12.67v.85a12.77 12.77 0 0 1-11.29 12.68v.52a51.1 51.1 0 0 1-1.27 11.36A26.24 26.24 0 0 0 177.08 90a26.16 26.16 0 0 0 8.51-17.43v-.08c.05-.69.08-1.32.08-1.97Z" id="path32" style="fill:#1a1a1a;fill-opacity:1"/>';
 
@@ -517,11 +517,11 @@ function multiavatar(string, sansEnv, ver) {
   // 04_final
   sP['04'] = [];
   sP['04']['env'] = env;
-  sP['04']['clo'] = '';
-  sP['04']['head'] = '';
-  sP['04']['mouth'] = '';
-  sP['04']['eyes'] = '';
-  sP['04']['top'] = '';
+  sP['04']['clo'] = '<path d="M142.73 181.39a27.45 27.45 0 0 0-5.93-13.59c-1 .47-2 .9-3 1.29v14.65a18.35 18.35 0 1 1-36.7 0v-14.53c-1.07-.39-2.11-.82-3.13-1.29a27.4 27.4 0 0 0-5.84 13.47 26.87 26.87 0 0 0-.27 3.83 27.59 27.59 0 0 0 55.18 0 28.42 28.42 0 0 0-.31-3.83Z" id="path10" style="fill:#e3e3e3;fill-opacity:1"/><path d="M142.73 181.39a28.42 28.42 0 0 1 .27 3.83 27.59 27.59 0 0 1-55.18 0 26.87 26.87 0 0 1 .27-3.83 72.56 72.56 0 0 0-35.42 31 115.55 115.55 0 0 0 125.52.08 72.49 72.49 0 0 0-35.46-31.08Z" id="path8" style="fill:#646464;fill-opacity:1"/>';
+  sP['04']['head'] = '<path d="M164.44 96.62V73.87q0-2.13-.18-4.23c-2-24.86-21.79-44.39-45.86-44.39h-5.88c-24.07 0-43.83 19.51-45.86 44.39q-.18 2.1-.18 4.23v22.75a12.74 12.74 0 0 0-11.29 12.67v.85a12.77 12.77 0 0 0 11.29 12.68v.52c0 21.19 12.86 39.22 30.79 45.87v14.53a18.41 18.41 0 0 0 18.36 18.35A18.41 18.41 0 0 0 134 183.74v-14.65c17.75-6.74 30.46-24.67 30.46-45.75v-.52a12.77 12.77 0 0 0 11.29-12.68v-.85a12.74 12.74 0 0 0-11.31-12.67Z" id="path12" style="fill:#d3d3d3;fill-opacity:1"/>';
+  sP['04']['mouth'] = '<path d="M126.7 135.83v-.73a6 6 0 0 0-6-6h-12.49a6 6 0 0 0-6 6v.73a6 6 0 0 0 3.93 5.64 6 6 0 0 0-3.93 5.63v.73a6 6 0 0 0 6 6h12.48a6 6 0 0 0 6-6v-.73a6 6 0 0 0-3.93-5.63 6 6 0 0 0 3.94-5.64Z" id="path22" style="fill:#5a5a5a;fill-opacity:1"/><circle cx="141.55" cy="135.8" r="6.8" id="circle34" style="fill:#b8b8b8;fill-opacity:1"/>';
+  sP['04']['eyes'] = '<rect x="77.31" y="81.87" width="32.5" height="12.75" rx="6.01" id="rect24" style="fill:#1a1a1a;fill-opacity:1"/><rect x="121.81" y="81.87" width="30.5" height="12.75" rx="6.01" id="rect32" style="fill:#1a1a1a;fill-opacity:1"/><path d="M93.92 98.32H81.64a1.79 1.79 0 1 0 0 3.57h6a5.93 5.93 0 0 0-.51 2.42v12.48a6 6 0 0 0 6 6h.73a6 6 0 0 0 6-6v-12.46a6 6 0 0 0-5.94-6.01Z" id="path30" style="fill:#1a1a1a;fill-opacity:1"/><rect x="94.44" y="102.02" width="3.58" height="10.64" rx="1.79" id="rect36" style="fill:#fff;fill-opacity:1"/><path d="M149.11 98.34h-12.42a6 6 0 0 0-6 6v12.48a6 6 0 0 0 6 6h.73a6 6 0 0 0 6-6v-12.49a5.93 5.93 0 0 0-.51-2.42h6.19a1.79 1.79 0 1 0 0-3.57Z" id="path26" style="fill:#1a1a1a;fill-opacity:1"/><rect x="137.94" y="102.02" width="3.58" height="10.64" rx="1.79" id="rect28" style="fill:#fff;fill-opacity:1"/>';
+  sP['04']['top'] = '<path d="M198.29 157.4a39.2 39.2 0 0 0-7.55-55.83 29.24 29.24 0 0 0-7.62-42.42 21.25 21.25 0 0 0 4.51-13.08 21.51 21.51 0 0 0-21.46-21.46H64.48A21.52 21.52 0 0 0 43 46.07a21.31 21.31 0 0 0 4.51 13.08 29.26 29.26 0 0 0-7.62 42.42 39.22 39.22 0 0 0-7.55 55.83 53.69 53.69 0 0 0-16 18 116.06 116.06 0 0 0 36.07 37.09 72.54 72.54 0 0 1 35.46-31.12 27.61 27.61 0 0 1 5.87-13.52c-16.23-7.51-27.58-24.61-27.58-44.53v-.52a12.77 12.77 0 0 1-11.29-12.68v-.85a12.74 12.74 0 0 1 11.34-12.65v-.53l1-28.57h96.27l1 28.57v.53a12.74 12.74 0 0 1 11.29 12.67v.85a12.77 12.77 0 0 1-11.29 12.68v.52c0 19.92-11.35 37-27.58 44.53a27.52 27.52 0 0 1 5.87 13.52 72.49 72.49 0 0 1 35.46 31.12 116.06 116.06 0 0 0 36.07-37.09 53.59 53.59 0 0 0-16.01-18.02Z" id="path38" style="fill:#1a1a1a;fill-opacity:1"/>';
 
 
   // 05_final
