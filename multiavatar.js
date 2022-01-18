@@ -13,7 +13,7 @@ function multiavatar(string, sansEnv, ver) {
     // 00_final
     "00": {
       "A": {
-        "env": ["none"],
+        "env": ["#E857B9"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -21,7 +21,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#3816D1"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -29,7 +29,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#D4D5E8"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -41,7 +41,7 @@ function multiavatar(string, sansEnv, ver) {
     // 01_final
     "01": {
       "A": {
-        "env": ["none"],
+        "env": ["#DEFF43"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white"],
@@ -49,7 +49,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#FC065B"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white"],
@@ -57,7 +57,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#C653D5"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white"],
@@ -69,7 +69,7 @@ function multiavatar(string, sansEnv, ver) {
     // 02_final
     "02": {
       "A": {
-        "env": ["none"],
+        "env": ["#84C62B"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red"],
@@ -77,7 +77,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#e5ca69", "pink"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#1F81CB"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red"],
@@ -85,7 +85,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#e5ca69", "pink"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#937AAE"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red"],
@@ -97,7 +97,7 @@ function multiavatar(string, sansEnv, ver) {
     // 03_final
     "03": {
       "A": {
-        "env": ["none"],
+        "env": ["#26E024"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white", "black"],
@@ -105,7 +105,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#504322"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white", "black"],
@@ -113,7 +113,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#7867CD"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white", "black"],
@@ -125,7 +125,7 @@ function multiavatar(string, sansEnv, ver) {
     // 04_final
     "04": {
       "A": {
-        "env": ["none"],
+        "env": ["#A10C40"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red", "orange"],
@@ -133,7 +133,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#333"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#09C620"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red", "orange"],
@@ -141,7 +141,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#333"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#AFC69A"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red", "orange"],
@@ -153,7 +153,7 @@ function multiavatar(string, sansEnv, ver) {
     // 05_final
     "05": {
       "A": {
-        "env": ["none"],
+        "env": ["#1556D4"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -161,7 +161,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#1A5DEB"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -169,7 +169,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#D4D5BD"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -181,7 +181,7 @@ function multiavatar(string, sansEnv, ver) {
     // 06_final
     "06": {
       "A": {
-        "env": ["none"],
+        "env": ["#68497B"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -189,7 +189,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#F14A43"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -197,7 +197,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#8B39E8"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -209,7 +209,7 @@ function multiavatar(string, sansEnv, ver) {
     // 07_final
     "07": {
       "A": {
-        "env": ["none"],
+        "env": ["#FF723B"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -217,7 +217,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#E0D75D"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -225,7 +225,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#5C70FB"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -237,7 +237,7 @@ function multiavatar(string, sansEnv, ver) {
     // 08_final
     "08": {
       "A": {
-        "env": ["none"],
+        "env": ["#421FC7"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white"],
@@ -245,7 +245,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#DADB03"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white"],
@@ -253,7 +253,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#0BCCC9"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white"],
@@ -265,7 +265,7 @@ function multiavatar(string, sansEnv, ver) {
     // 09_final
     "09": {
       "A": {
-        "env": ["none"],
+        "env": ["#57E403"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red"],
@@ -273,7 +273,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#e5ca69", "pink"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#C47C2C"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red"],
@@ -281,7 +281,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#e5ca69", "pink"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#BF12E8"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red"],
@@ -293,7 +293,7 @@ function multiavatar(string, sansEnv, ver) {
     // 10_final
     "10": {
       "A": {
-        "env": ["none"],
+        "env": ["#8858DA"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white", "black"],
@@ -301,7 +301,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#480382"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white", "black", "black"],
@@ -309,7 +309,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#104783"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["white", "black", "black"],
@@ -321,7 +321,7 @@ function multiavatar(string, sansEnv, ver) {
     // 11_final
     "11": {
       "A": {
-        "env": ["none"],
+        "env": ["#B35E4B"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "orange"],
@@ -329,7 +329,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#2FAFD7"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "orange"],
@@ -337,7 +337,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#1ACDB9"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "orange"],
@@ -349,7 +349,7 @@ function multiavatar(string, sansEnv, ver) {
     // 12_final
     "12": {
       "A": {
-        "env": ["none"],
+        "env": ["#9C6A76"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red", "orange"],
@@ -357,7 +357,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#e5ca69", "pink"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#340F39"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red", "orange"],
@@ -365,7 +365,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#e5ca69", "pink"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#0CD58C"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["red", "orange"],
@@ -377,7 +377,7 @@ function multiavatar(string, sansEnv, ver) {
     // 13_final
     "13": {
       "A": {
-        "env": ["none"],
+        "env": ["#889870"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "black"],
@@ -385,7 +385,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#7D40FC"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "black"],
@@ -393,7 +393,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#EDF54D"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "black"],
@@ -405,7 +405,7 @@ function multiavatar(string, sansEnv, ver) {
     // 14_final
     "14": {
       "A": {
-        "env": ["none"],
+        "env": ["#838175"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "black"],
@@ -413,7 +413,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#0EE9A4"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "black"],
@@ -421,7 +421,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["black"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#68A36E"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white", "black"],
@@ -433,7 +433,7 @@ function multiavatar(string, sansEnv, ver) {
     // 15_final
     "15": {
       "A": {
-        "env": ["none"],
+        "env": ["#E4B927"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -441,7 +441,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "B": {
-        "env": ["none"],
+        "env": ["#0EB401"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -449,7 +449,7 @@ function multiavatar(string, sansEnv, ver) {
         "top": ["#4a2d00"]
       },
       "C": {
-        "env": ["none"],
+        "env": ["#494F3A"],
         "clo": ["#685220", "black"],
         "head": ["#ffeebe"],
         "mouth": ["orange", "white"],
@@ -466,8 +466,6 @@ function multiavatar(string, sansEnv, ver) {
 
   // Optimization
   var env = '<path d="M33.83,33.83a115.5,115.5,0,1,1,0,163.34,115.49,115.49,0,0,1,0-163.34Z" style="fill:#01;"/>';
-  var head = '<path d="m115.5 51.75a63.75 63.75 0 0 0-10.5 126.63v14.09a115.5 115.5 0 0 0-53.729 19.027 115.5 115.5 0 0 0 128.46 0 115.5 115.5 0 0 0-53.729-19.029v-14.084a63.75 63.75 0 0 0 53.25-62.881 63.75 63.75 0 0 0-63.65-63.75 63.75 63.75 0 0 0-0.09961 0z" style="fill:#000;"/>';
-  var str = 'stroke-linecap:round;stroke-linejoin:round;stroke-width:';
 
 
   // The below code is automatically injected by running /svg/_build.php script
