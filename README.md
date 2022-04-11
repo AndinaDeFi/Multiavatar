@@ -88,6 +88,13 @@ More info can be found in the `multiavatar.js` file comments.
 
 Multiavatar is coded in vanilla JavaScript. Only a single library (SHA-256) is used, integrated into the script. The initial character designs in SVG are also integrated into the script. So there is a single dependency-free JavaScript file that has everything in it (minified 68 KB).
 
+#### Packing ####
+
+In order to build the library, run `npm run build`. You need to have [uglify-js](https://www.npmjs.com/package/uglify-js) installed globally.
+
+
+#### Testing ####
+
 To test different parts manually, you can uncomment them in the code.
 
 Also, the Multiavatar script accepts the following three paramenters: `string`, `sansEnv`, `ver`.
